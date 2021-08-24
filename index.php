@@ -1,10 +1,10 @@
 <?php
 
-$content_total = count(scandir("content/")) - 2;
-$empty_total = count(scandir("empty/")) - 2;
-$footer_total = count(scandir("footer/")) - 2;
-$header_total = count(scandir("header/")) - 2;
-$navbar_total = count(scandir("navbar/")) - 2;
+$content_total = iterator_count(new FilesystemIterator("content/"));
+$empty_total = iterator_count(new FilesystemIterator("empty/"));
+$footer_total = iterator_count(new FilesystemIterator("footer/"));
+$header_total = iterator_count(new FilesystemIterator("header/"));
+$navbar_total = iterator_count(new FilesystemIterator("navbar/"));
 
 ?>
 <html lang="en">
