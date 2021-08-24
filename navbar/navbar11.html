@@ -1,0 +1,124 @@
+<section class="w-100 bg-white" style="box-sizing: border-box">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        .header-1-11 .navbar-light .navbar-nav .nav-link {
+            color: #092a33;
+        }
+
+        .header-1-11 .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .nav-link:hover {
+            font-weight: 500;
+            color: #5252ff !important;
+            border-bottom: 1px solid #5252ff;
+            transition: 0.3s;
+        }
+
+        .header-1-11 .navbar-light .navbar-nav .nav-link {
+            color: #1b1b1b;
+            transition: 0.3s;
+        }
+
+        .header-1-11 .user-nav {
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .header-1-11 .dropdown-menu {
+            border: 1px solid #eeeeee;
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            padding: 14px;
+            box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.03);
+        }
+
+        .header-1-11 .dropdown-item {
+            padding: 0.625rem 0rem !important;
+        }
+
+        .header-1-11 .dropdown-item:hover {
+            background-color: #ffffff !important;
+            color: #5252ff;
+        }
+
+        .header-1-11 .user-dropdown {
+            margin-right: 1.25rem;
+        }
+
+        @media all and (min-width: 992px) {
+            .header-1-11 .user-dropdown .dropdown-menu {
+                display: none;
+            }
+
+            .header-1-11 .user-dropdown:hover .user-nav {
+                color: #1b1b1b;
+            }
+
+            .header-1-11 .user-dropdown:hover .dropdown-menu {
+                display: block;
+            }
+
+            .header-1-11 .user-dropdown .dropdown-menu {
+                margin-top: 0;
+            }
+        }
+    </style>
+    <div class="header-1-11" style="font-family: Poppins, sans-serif">
+        <nav class="navbar navbar-expand-lg navbar-light p-4 px-md-4 mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M3.5 15.75C3.5 8.98451 8.98451 3.5 15.75 3.5H29.75C30.7165 3.5 31.5 4.2835 31.5 5.25C31.5 6.2165 30.7165 7 29.75 7H15.75C10.9175 7 7 10.9175 7 15.75V29.75C7 30.7165 6.2165 31.5 5.25 31.5C4.2835 31.5 3.5 30.7165 3.5 29.75V15.75Z"
+                              fill="#5252FF" />
+                        <path
+                                d="M10.5 17.5C10.5 13.634 13.634 10.5 17.5 10.5H31.5C35.366 10.5 38.5 13.634 38.5 17.5V31.5C38.5 35.366 35.366 38.5 31.5 38.5H17.5C13.634 38.5 10.5 35.366 10.5 31.5V17.5Z"
+                                fill="#5252FF" />
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item" style="display: flex">
+                            <a class="nav-link mx-md-4 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item" style="display: flex">
+                            <a class="nav-link mx-md-4" href="#">Team</a>
+                        </li>
+                        <li class="nav-item" style="display: flex">
+                            <a class="nav-link mx-md-4" href="#">Journey</a>
+                        </li>
+                        <li class="nav-item" style="display: flex">
+                            <a class="nav-link mx-md-4" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item" style="display: flex">
+                            <a class="nav-link mx-md-4" href="#">About</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <img class="d-lg-none d-block me-4"
+                             src="http://api.elements.buildwithangga.com/storage/files/2/assets/Navbar/Navbar1/Navbar-1-1.png"
+                             alt="" />
+
+                        <div class="user-dropdown dropdown">
+                            <a class="user-nav dropdown-toggle" href="#" data-bs-toggle="dropdown" style="color: #1b1b1b">Howdy,
+                                <span style="color: #5252ff">Abigail Lanna</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">My Account</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Pro Features</a></li>
+                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                        <img class="d-lg-block d-none"
+                             src="http://api.elements.buildwithangga.com/storage/files/2/assets/Navbar/Navbar1/Navbar-1-1.png"
+                             alt="" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
