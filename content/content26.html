@@ -1,0 +1,158 @@
+<section class="w-100" style="box-sizing: border-box; background-color: #081b21">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+    .content-8-3 .frame {
+      position: relative;
+    }
+
+    .content-8-3 .frame::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      box-sizing: border-box;
+      border: 2px solid #fff;
+      transform: translate(-30px, 22px);
+      transition: transform 250ms ease;
+    }
+
+    .content-8-3 .frame:hover::before {
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      transform: translate(0px, 0px);
+    }
+
+    .content-8-3 .btn-read {
+      color: #ffffff;
+      font-weight: 700;
+      padding: 1.25rem 1.25rem 1.25rem 0rem;
+      letter-spacing: 0.05em;
+      transition: 0.2s;
+    }
+
+    .content-8-3 .btn-read:hover {
+      color: #d75a00;
+      transition: 0.2s;
+    }
+
+    .content-8-3 .btn-read:hover svg path {
+      fill: #d75a00;
+      transition: 0.2s;
+    }
+
+    .content-8-3 .text-gray-1 {
+      color: #adadad;
+    }
+
+    .content-8-3 .main {
+      padding: 2.5rem 2rem 2rem;
+    }
+
+    .content-8-3 .left-column,
+    .content-8-3 .right-column {
+      width: 100%;
+    }
+
+    .content-8-3 .right-column {
+      margin-top: 6rem;
+    }
+
+    .content-8-3 .caption-top {
+      font: normal 1.25rem/1.75rem "Bebas Neue", cursive;
+      margin-bottom: 1rem;
+    }
+
+    .content-8-3 .title-font {
+      font: normal 3.75rem/1 "Bebas Neue", cursive;
+      margin-bottom: 1.5rem;
+    }
+
+    .content-8-3 .caption-text {
+      font-weight: 500;
+      line-height: 2.25rem;
+      letter-spacing: 0.025em;
+      margin-bottom: 2.25rem;
+    }
+
+    @media (min-width: 576px) {}
+
+    @media (min-width: 768px) {
+      .content-8-3 .main {
+        padding: 2.5rem 4rem 2rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .content-8-3 .main {
+        padding: 6rem 6rem 8rem;
+      }
+
+      .content-8-3 .left-column,
+      .content-8-3 .right-column {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .content-8-3 .main {
+        padding: 6rem 9rem 8rem;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .content-8-3 .frame::before {
+        width: 100%;
+        height: 100%;
+        transform: translate(-10px, 10px);
+        transition: transform 250ms ease;
+      }
+    }
+  </style>
+
+  <div class="content-8-3" style="font-family: 'Inter', sans-serif">
+    <div class="container-xxl mx-auto main">
+      <div class="mx-auto d-flex flex-lg-row flex-column position-relative gap-md-4 gap-0">
+        <!-- Left Column -->
+        <div class="left-column flex-lg-grow-1 d-flex flex-column align-items-center text-center" style="z-index: 10">
+          <div class="frame">
+            <img class="w-100"
+                 src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content8/Content-8-8.png" />
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column flex-lg-grow-1 text-start d-block">
+          <p class="text-white caption-top">BLOGS</p>
+          <h1 class="text-white title-font">
+            Communication is<br class="d-md-block d-none" />
+            important ?
+          </h1>
+          <p class="text-gray-1 caption-text">
+            Being able to communicate effectively is one<br class="d-md-block d-none" />
+            of the most important life skills. Those with<br class="d-md-block d-none" />
+            good interpersonal skills are strong verbal and<br class="d-md-block d-none" />
+            non-verbal communicators and are often<br class="d-md-block d-none" />
+            considered to be “good with people”.
+          </p>
+          <div class="d-inline-block align-items-center mx-auto d-lg-flex justify-content-start">
+            <button class="btn btn-read d-flex align-items-center">
+              Read more
+              <svg class="btn-icon ms-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M4.66667 4.26123C4.29848 4.26123 4 4.55971 4 4.9279C4 5.29609 4.29848 5.59456 4.66667 5.59456H9.67543L4.19526 11.1232C3.93491 11.3835 3.93491 11.8056 4.19526 12.066C4.45561 12.3263 4.87772 12.3263 5.13807 12.066L10.6667 6.48851V11.5946C10.6667 11.9628 10.9651 12.2612 11.3333 12.2612C11.7015 12.2612 12 11.9628 12 11.5946V4.9279C12 4.55971 11.7015 4.26123 11.3333 4.26123H4.66667Z"
+                      fill="white" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,336 @@
+<section class="w-100" style="box-sizing: border-box; padding-top: 5rem; padding-bottom: 5rem">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+    .content-4-3 p {
+      margin: 0rem;
+    }
+
+    .content-4-3 {
+      color: #112340;
+    }
+
+    .content-4-3 hr {
+      height: 2px;
+      background-color: #112340;
+      opacity: 1;
+      border: none;
+      margin-bottom: 2rem;
+    }
+
+    .content-4-3 .card-item {
+      border-radius: 1.5rem;
+      padding: 2.5rem 2.25rem;
+      margin-right: auto;
+      margin-left: auto;
+      min-width: 200px;
+      width: 320px;
+      border: 2px solid #112340;
+      background-color: transparent;
+    }
+
+    .content-4-3 .bg-white-1 {
+      background-color: #f6f5fb;
+    }
+
+    .content-4-3 .bg-yellow-1 {
+      background-color: #ffce5d;
+    }
+
+    .content-4-3 .card-offset-right,
+    .content-4-3 .card-offset-left {
+      border-radius: 1.5rem;
+      top: 10px;
+      right: -10px;
+      bottom: -10px;
+      left: 10px;
+      z-index: -1;
+      width: inherit;
+      height: inherit;
+      transition: 0.4s;
+    }
+
+    .content-4-3 .card-item:hover .card-offset-right,
+    .content-4-3 .card-item:hover .card-offset-left {
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      z-index: -1;
+      width: inherit;
+      height: inherit;
+      transition: 0.4s;
+    }
+
+    .content-4-3 .btn-offset-right,
+    .content-4-3 .btn-offset-left {
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      top: 5px;
+      right: -8px;
+      bottom: -5px;
+      left: 8px;
+      z-index: -1;
+      width: 100%;
+      transition: 0.4s;
+    }
+
+    .content-4-3 .btn-hover:hover .btn-offset-right,
+    .content-4-3 .btn-hover:hover .btn-offset-left {
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      z-index: -1;
+      width: 100%;
+      transition: 0.4s;
+      margin-left: -4px;
+    }
+
+    .content-4-3 .btn-card-right,
+    .content-4-3 .btn-card-left {
+      font: 500 1.125rem/1.75rem "Asap", sans-serif;
+      border-radius: 0.5rem;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+
+      border: 2px solid #112340;
+    }
+
+    .content-4-3 .footer {
+      background-color: #f8f9fc;
+    }
+
+    .content-4-3 .content-section {
+      margin-bottom: 4rem;
+    }
+
+    .content-4-3 .title-font {
+      font: 500 3rem/1.25 "Asap", sans-serif;
+      color: #112340;
+      margin-bottom: 1.25rem;
+    }
+
+    .content-4-3 .caption-font {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      color: #7d8797;
+    }
+
+    .content-4-3 .card-title {
+      font: 400 1.5rem/2rem "Asap", sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .content-4-3 .card-text {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .content-4-3 .card-price {
+      font: 500 3rem/1 "Asap", sans-serif;
+    }
+
+    .content-4-3 .card-point {
+      margin-bottom: 1.25rem;
+    }
+
+    .content-4-3 .footer-caption {
+      font: 500 1.125rem/1.75rem "Asap", sans-serif;
+      color: #7d8797;
+    }
+
+    /* md */
+    @media (min-width: 768px) {
+      .content-4-3 .card-item.left {
+        margin-right: 0rem;
+        margin-left: auto;
+      }
+
+      .content-4-3 .card-item.right {
+        margin-right: auto;
+        margin-left: 0rem;
+      }
+    }
+  </style>
+  <div class="content-4-3" style="font-family: 'Asap', sans-serif; overflow-x: hidden">
+    <div class="container-xxl mx-auto">
+      <div class="content-section px-5">
+        <h1 class="title-font text-center">
+          Our Services Has<br />Friendly Packages
+        </h1>
+        <p class="caption-font text-center">
+          Choose plans that might better for your company
+        </p>
+      </div>
+      <div class="row d-flex flex-md-row flex-column gap-5 px-5" style="margin-bottom: 5rem">
+        <div class="col-lg-6 card-item left h-100 position-relative">
+          <div class="card-body p-0">
+            <div class="card-offset-left bg-white-1 position-absolute"></div>
+            <h5 class="card-title text-center">STARTER</h5>
+            <p class="card-text text-center">
+              <span class="card-price">$125.00</span> / year
+            </p>
+            <hr />
+            <div class="pb-4">
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">2 Bank Account</p>
+              </div>
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">Priority 24/7 Support</p>
+              </div>
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">APIs Payment Gateway</p>
+              </div>
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">$0 Fee Withdrawl</p>
+              </div>
+            </div>
+            <div class="text-center position-relative btn-hover">
+              <div class="btn-offset-left m-auto position-absolute text-white"></div>
+              <button class="btn btn-card-left position-relative w-100">
+                Go Starter
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 card-item right h-100 position-relative">
+          <div class="card-body p-0">
+            <div class="card-offset-right bg-yellow-1 position-absolute"></div>
+            <h5 class="card-title text-center text-2xl">PLATINUM</h5>
+            <p class="card-text text-center text-lg">
+              <span class="card-price">$575.00</span> / year
+            </p>
+            <hr class="mb-8" />
+            <div class="pb-3">
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">Unlimited Bank Account</p>
+              </div>
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">Priority 24/7 Support</p>
+              </div>
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">APIs Payment Gateway</p>
+              </div>
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">$0 Fee Withdrawl</p>
+              </div>
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">Multiple Card</p>
+              </div>
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">$0 Fee Withdrawl</p>
+              </div>
+              <div class="d-flex align-items-center card-point gap-2">
+                <svg class="" width="19" height="20" viewBox="0 0 19 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.5" cy="10" rx="9.5" ry="10" fill="#112340" />
+                  <path d="M5 9.66667L8.2 13L14.5 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p class="text-base">Multiple Card</p>
+              </div>
+            </div>
+            <div class="text-center position-relative btn-hover">
+              <div class="btn-offset-right m-auto position-absolute text-white"></div>
+              <button class="btn btn-card-right position-relative w-100">
+                Take Platinum
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer" style="padding-top: 3rem; padding-bottom: 3rem">
+      <div class="container-xxl mx-auto">
+        <div class="px-5">
+          <div style="margin-bottom: 2rem">
+            <p class="footer-caption text-center">
+              More than 10K+ companies trusted us
+            </p>
+          </div>
+          <div class="align-items-center d-flex flex-md-row flex-column justify-content-md-center gap-5">
+            <img class=""
+                 src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content4/Content-4-1.png"
+                 height="35px" alt="Google" srcset="" />
+            <img class=""
+                 src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content4/Content-4-2.png"
+                 height="35px" alt="Dropbox" srcset="" />
+            <img class=""
+                 src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content4/Content-4-3.png"
+                 height="35px" alt="Facebook" srcset="" />
+            <img class=""
+                 src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content4/Content-4-4.png"
+                 height="35px" alt="Spotify" srcset="" />
+            <img class=""
+                 src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content4/Content-4-5.png"
+                 height="35px" alt="Microsoft" srcset="" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

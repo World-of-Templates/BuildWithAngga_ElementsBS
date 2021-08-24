@@ -1,0 +1,127 @@
+<section class="w-100 bg-white" style="box-sizing: border-box;">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+    .content-7-6 .title-font {
+      font: 800 3rem/1.25 'Inter', sans-serif;
+      margin-bottom: 2rem;
+      letter-spacing: -0.025em;
+      color: #113873;
+    }
+
+    .content-7-6 .caption-text {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.05em;
+      line-height: 2rem;
+      margin-bottom: 1.5rem;
+      color: #6681A9;
+    }
+
+    .content-7-6 .card-item {
+      padding: 4rem 3.5rem;
+      background-color: #D8E7FF;
+    }
+
+    .content-7-6 .btn-send {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      border-radius: 999px;
+      padding: 1rem 3.5rem;
+      background-color: #0343E5;
+      transition: 0.3s;
+    }
+
+    .content-7-6 .btn-send:hover {
+      background-color: #195AFF;
+      transition: 0.3s;
+    }
+
+    .content-7-6 .main {
+      padding: 3rem 2rem 3.5rem;
+    }
+
+    .content-7-6 .label {
+      font-size: 1rem;
+      line-height: 1.75rem;
+    }
+
+    .content-7-6 .input {
+      border: none;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      line-height: 2rem;
+      padding: 0.25rem 0.75rem;
+    }
+
+    @media (min-width: 576px) {
+      .content-7-6 .title-font {
+        font: 800 3.75rem/1.25 'Inter', sans-serif;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .content-7-6 .main {
+        padding: 3rem 4rem 3.5rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .content-7-6 {
+        background-image: url("http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content7/Content-7-12.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .content-7-6 .main {
+        padding: 2.25rem 7rem 3.5rem;
+      }
+
+      .content-7-6 .caption-text {
+        margin-bottom: 5rem;
+      }
+    }
+
+    @media (min-width: 1200px) {}
+  </style>
+  <!-- Navbar -->
+  <div class="content-7-6" style="font-family: 'Inter', sans-serif">
+    <div class="container-xxl main mx-auto row">
+      <!-- Left Column -->
+      <div
+              class="col-lg-6 col-12 p-xxl-0 d-flex flex-column align-items-start justify-content-center text-start mb-5 lg:mb-lg-0">
+        <h1 class="title-font">Have any project ?
+        </h1>
+        <p class="caption-text">
+          We are happy if you are interested in <br class="d-sm-block d-none"> our project, please let us
+          know by filling <br class="d-sm-block d-none"> in the form
+        </p>
+      </div>
+      <!-- Right Column -->
+      <div class="col-lg-6 col-12 p-xxl-0">
+        <div class=" card-item d-flex flex-column ">
+          <form action="" method="">
+            <div class="position-relative mb-3">
+              <label for="full-name" class="label">Name</label>
+              <input type="text" id="full-name" name="full-name" class="w-100 bg-white input">
+            </div>
+            <div class="position-relative mb-3">
+              <label for="email" class="label">Email</label>
+              <input type="text" id="email" name="email" class="w-100 bg-white input">
+            </div>
+            <div class="position-relative mb-3">
+              <label for="messages" class="label">Messages</label>
+
+              <textarea type="text" id="messages" name="messages" cols="10" rows="3"
+                        class="w-100 bg-white input"></textarea>
+            </div>
+            <div class="d-flex">
+              <button type="submit" class="btn btn-send ms-auto text-white">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
