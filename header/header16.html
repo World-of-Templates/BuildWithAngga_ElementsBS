@@ -1,0 +1,653 @@
+<section class="w-100" style="box-sizing: border-box">
+  <!-- Datepicker -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    .header-6-3 .navbar-light .navbar-nav .nav-link {
+      font-weight: 300;
+      font-size: 0.875rem;
+      color: #130f48;
+      transition: 0.3s;
+    }
+
+    .header-6-3 .navbar-light .navbar-nav .nav-link.active,
+    .header-6-3 .navbar-light .navbar-nav .nav-link:hover {
+      color: #4657f0;
+      transition: 0.3s;
+    }
+
+    .header-6-3 .navbar-light .navbar-nav .nav-link.active {
+      font-weight: 600;
+    }
+
+    .header-6-3 .btn-sign {
+      font: 500 0.875rem/1.25rem "Poppins", sans-serif;
+      padding: 1rem 1.75rem;
+    }
+
+    .header-6-3 .btn-fill {
+      background-color: #4657f0;
+      transition: 0.3s;
+    }
+
+    .header-6-3 .btn-fill:hover {
+      background-color: #102051;
+      transition: 0.3s;
+    }
+
+    .header-6-3 .btn-register {
+      font: 500 0.875rem/1.25rem "Poppins", sans-serif;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+    }
+
+    .header-6-3 .main-nav {
+      padding: 2rem;
+    }
+
+    .header-6-3 .main {
+      padding: 4rem 2rem 5rem;
+    }
+
+    .header-6-3 .left-col,
+    .header-6-3 .right-col,
+    .header-6-3 .card-item {
+      width: 100%;
+    }
+
+    .header-6-3 .left-col {
+      margin-bottom: 0.75rem;
+    }
+
+    .header-6-3 .text-black-1 {
+      color: #203a57;
+    }
+
+    .header-6-3 .text-gray-3 {
+      color: #9399d2;
+    }
+
+    .header-6-3 .title-font {
+      font: 700 2.25rem/1.2 "Poppins", sans-serif;
+      margin-bottom: 2rem;
+      color: #00346d;
+    }
+
+    .header-6-3 .caption-font {
+      line-height: 1.75rem;
+      letter-spacing: 0.025em;
+      margin-bottom: 5rem;
+      color: #969ba0;
+    }
+
+    .header-6-3 .card-block {
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0px 4px 20px 0px rgb(133 133 133 / 15%);
+    }
+
+    .header-6-3 label {
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+
+    .header-6-3 input,
+    .header-6-3 .input {
+      border: none;
+      font: 300 0.875rem/1.25rem "Poppins", sans-serif;
+      color: #92a3b7;
+    }
+
+    .header-6-3 input::placeholder,
+    .header-6-3 .form-control {
+      color: #92a3b7;
+    }
+
+    .header-6-3 .dropdown-toggle::after {
+      display: none;
+    }
+
+    .header-6-3 .dropdown-menu {
+      margin-top: 18px !important;
+      border-radius: 0.75rem;
+      box-shadow: 0 0px 20px 0 rgba(167, 167, 167, 0.1),
+      0 0px 20px 0 rgba(167, 167, 167, 0.06);
+      left: 0 !important;
+      right: 0 !important;
+    }
+
+    .header-6-3 .btn-explore {
+      font: 600 1rem/1.5rem "Poppins", sans-serif;
+      padding: 1rem 1.75rem;
+      border-radius: 0.75rem;
+    }
+
+    .header-6-3 .item-title {
+      font: 600 0.875rem/1.25rem "Poppins", sans-serif;
+      margin-bottom: 0.25rem;
+    }
+
+    .header-6-3 .item-caption {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+
+    .header-6-3 .dropdown-header-hover:hover {
+      background-color: #edefff;
+      border-radius: 0.75rem;
+    }
+
+    .header-6-3 .dropdown-header-hover:hover .dropdown-header-icon-arrow {
+      display: block !important;
+    }
+
+    .header-6-3 {
+      background-image: url("http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-16.png");
+      background-repeat: no-repeat, repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (min-width: 576px) {
+      .header-6-3 .title-font {
+        font: 700 3rem/1.2 "Poppins", sans-serif;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .header-6-3 {
+        background-image: url("http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-14.png");
+      }
+
+      .header-6-3 .main-nav {
+        padding: 2rem 5rem;
+      }
+
+      .header-6-3 .main {
+        padding: 4rem 4rem 5rem;
+      }
+
+      .header-6-3 .left-col {
+        margin-bottom: 3rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .header-6-3 {
+        height: 900px;
+        background-image: url("http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-14.png");
+      }
+
+      .header-6-3 .main-nav {
+        padding: 2rem 6rem;
+      }
+
+      .header-6-3 .main {
+        padding: 4rem 6rem 5rem;
+      }
+
+      .header-6-3 .left-col {
+        margin-bottom: 0rem;
+        width: 66.666667%;
+      }
+
+      .header-6-3 .title-font {
+        font: 700 3.75rem/1.2 "Poppins", sans-serif;
+      }
+
+      .header-6-3 .card-block {
+        padding: 0.625rem 0.625rem 0.625rem 2rem;
+      }
+
+      .header-6-3 .card-item {
+        width: auto;
+      }
+
+      .header-6-3 .dropdown-menu {
+        width: 140%;
+      }
+    }
+
+    @media (min-width: 1200px) {}
+
+    /* Datepicker */
+    .datepicker {
+      border: none;
+      border-radius: 0.75rem !important;
+      box-shadow: 0 0px 20px 0 rgba(167, 167, 167, 0.1),
+      0 0px 20px 0 rgba(167, 167, 167, 0.06);
+      padding: 0.75rem !important;
+      color: #203a57 !important;
+    }
+
+    .datepicker .datepicker-switch:hover,
+    .datepicker .next:hover,
+    .datepicker .prev:hover,
+    .datepicker tfoot tr th:hover {
+      background-color: transparent !important;
+    }
+
+    .datepicker .datepicker-switch {
+      font: 500 0.875rem/1.25rem "Poppins", sans-serif !important;
+    }
+
+    .datepicker .day {
+      font-size: 0.75rem !important;
+      line-height: 2 !important;
+    }
+
+    .datepicker table tr td.day.focused,
+    .datepicker table tr td.day:hover,
+    .datepicker table tr td.month.focused,
+    .datepicker table tr td.month:hover,
+    .datepicker table tr td.year.focused,
+    .datepicker table tr td.year:hover {
+      color: #4657f0;
+      background-color: transparent !important;
+    }
+
+    .datepicker table tr td.today,
+    .datepicker table tr td.today.disabled,
+    .datepicker table tr td.today.disabled:hover,
+    .datepicker table tr td.today:hover {
+      background-color: #838ff5 !important;
+      background-image: none !important;
+      color: #fff !important;
+    }
+
+    .datepicker table tr td.active,
+    .datepicker table tr td.active.disabled,
+    .datepicker table tr td.active.disabled:hover,
+    .datepicker table tr td.active:hover {
+      background-color: #4657f0 !important;
+      background-image: none !important;
+      color: #fff !important;
+    }
+
+    .datepicker .dow,
+    .datepicker .month,
+    .datepicker .year {
+      font: 500 0.75rem/1rem "Poppins", sans-serif !important;
+      padding-top: 12px !important;
+      padding-bottom: 12px !important;
+    }
+
+    .datepicker table tr td.today,
+    .datepicker table tr td.today:hover,
+    .datepicker table tr td.today.disabled,
+    .datepicker table tr td.today.disabled:hover {
+      color: #000000;
+      background-color: #99fff6;
+      border-color: #33ffe4;
+    }
+
+    .datepicker-dropdown.datepicker-orient-bottom:before,
+    .datepicker-dropdown.datepicker-orient-bottom:after,
+    .datepicker-dropdown.datepicker-orient-top:before,
+    .datepicker-dropdown.datepicker-orient-top:after {
+      display: none;
+    }
+
+    .datepicker table {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    @media (max-width: 991px) {
+
+      .datepicker.datepicker-orient-top,
+      .datepicker.datepicker-orient-bottom {
+        left: 0;
+        right: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .datepicker.datepicker-orient-top,
+      .datepicker.datepicker-orient-bottom {
+        top: 587px !important;
+      }
+    }
+  </style>
+  <div class="header-6-3 container-xxl mx-auto p-0" style="font-family: 'Poppins', sans-serif">
+    <nav class="main-nav navbar navbar-expand-lg navbar-light bg-body" style="font-family: Poppins, sans-serif">
+      <a class="navbar-brand" href="#">
+        <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-15.png"
+             alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-md-3 active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-md-3" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-md-3" href="#">Tour Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-md-3" href="#">About Us</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a class="btn btn-sign">Sign Up</a>
+          <a class="btn btn-register btn-fill text-white" href="#">Register</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main mx-auto d-flex flex-lg-row flex-column">
+      <div
+              class="left-col flex-lg-grow-0 d-flex flex-column align-items-lg-start text-lg-start align-items-center text-center">
+        <h1 class="title-font">
+          Maximize your camping<br class="d-lg-block d-none" />
+          experience with us
+        </h1>
+        <p class="caption-font">
+          Apart from providing a public campsite. We also provide private<br class="d-md-block d-none" />
+          campsites that are perfect for spending time with your family
+        </p>
+        <div class="card-block bg-white w-100">
+          <form action="">
+            <div class="row align-items-center justify-content-end gap-lg-4 me-lg-1 gap-lg-0 gap-4">
+              <div class="card-item col-lg-3 p-0 nav-item dropdown">
+                <ul class="p-0 m-0">
+                  <li class="nav-item dropdown list-unstyled">
+                    <a class="nav-link dropdown-toggle p-0" href="#" data-bs-toggle="dropdown">
+                      <label for=""
+                             class="d-flex flex-row justify-content-lg-start justify-content-center gap-1 align-items-center text-black-1">
+                        Location
+                        <svg class="d-block dropdown-header-icon-drop" width="16"
+                             height="16" viewBox="0 0 16 16" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6L8 10L4 6" stroke="#FF984E" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </label>
+                      <p class="input m-0" id="location">
+                        Enter your campsite
+                      </p>
+                      <input id="location_target" type="text"
+                             class="bg-white p-0 text-lg-start text-center d-none"
+                             placeholder="Enter your campsites" disabled />
+                    </a>
+                    <ul class="dropdown-menu p-3 border-0" style="cursor: pointer">
+                      <li id="loc1" class="cursor-pointer">
+                        <div
+                                class="dropdown-header-hover h-100 d-flex p-3 align-items-center justify-content-between text-start gap-4">
+                          <div class="flex-grow-0">
+                            <h2 class="item-title">Highland Camp</h2>
+                            <p class="item-caption mb-0 text-gray-3">
+                              Bogor, Indonesia
+                            </p>
+                          </div>
+                          <svg class="dropdown-header-icon-arrow d-none" width="18"
+                               height="18" viewBox="0 0 18 18" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M14.5237 9.42011L10.7887 13.1701C10.6687 13.2901 10.5187 13.3501 10.3687 13.3501C10.2187 13.3501 10.0687 13.2901 9.94871 13.1701C9.70871 12.9301 9.70871 12.5551 9.94871 12.3151L12.6637 9.58512H3.90371C3.57371 9.58512 3.30371 9.31512 3.30371 8.98512C3.30371 8.65512 3.57371 8.38512 3.90371 8.38512H12.6637L9.94871 5.65512C9.70871 5.41512 9.70871 5.04012 9.94871 4.80012C10.1887 4.56012 10.5637 4.56012 10.8037 4.80012L14.5387 8.55012C14.7637 8.80512 14.7637 9.19511 14.5237 9.42011Z"
+                                    fill="#FF984E" />
+                          </svg>
+                        </div>
+                      </li>
+                      <li id="loc2" class="cursor-pointer">
+                        <div
+                                class="dropdown-header-hover h-100 d-flex p-3 align-items-center justify-content-between text-start gap-4">
+                          <div class="flex-grow-0">
+                            <h2 class="item-title">Rimba Camp</h2>
+                            <p class="item-caption mb-0 text-gray-3">
+                              Kalimantan, Indonesia
+                            </p>
+                          </div>
+                          <svg class="dropdown-header-icon-arrow d-none" width="18"
+                               height="18" viewBox="0 0 18 18" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M14.5237 9.42011L10.7887 13.1701C10.6687 13.2901 10.5187 13.3501 10.3687 13.3501C10.2187 13.3501 10.0687 13.2901 9.94871 13.1701C9.70871 12.9301 9.70871 12.5551 9.94871 12.3151L12.6637 9.58512H3.90371C3.57371 9.58512 3.30371 9.31512 3.30371 8.98512C3.30371 8.65512 3.57371 8.38512 3.90371 8.38512H12.6637L9.94871 5.65512C9.70871 5.41512 9.70871 5.04012 9.94871 4.80012C10.1887 4.56012 10.5637 4.56012 10.8037 4.80012L14.5387 8.55012C14.7637 8.80512 14.7637 9.19511 14.5237 9.42011Z"
+                                    fill="#FF984E" />
+                          </svg>
+                        </div>
+                      </li>
+                      <li id="loc3" class="cursor-pointer">
+                        <div
+                                class="dropdown-header-hover h-100 d-flex p-3 align-items-center justify-content-between text-start gap-4">
+                          <div class="flex-grow-0">
+                            <h2 class="item-title">Ragunan Camp</h2>
+                            <p class="item-caption mb-0 text-gray-3">
+                              Jakarta, Indonesia
+                            </p>
+                          </div>
+                          <svg class="dropdown-header-icon-arrow d-none" width="18"
+                               height="18" viewBox="0 0 18 18" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M14.5237 9.42011L10.7887 13.1701C10.6687 13.2901 10.5187 13.3501 10.3687 13.3501C10.2187 13.3501 10.0687 13.2901 9.94871 13.1701C9.70871 12.9301 9.70871 12.5551 9.94871 12.3151L12.6637 9.58512H3.90371C3.57371 9.58512 3.30371 9.31512 3.30371 8.98512C3.30371 8.65512 3.57371 8.38512 3.90371 8.38512H12.6637L9.94871 5.65512C9.70871 5.41512 9.70871 5.04012 9.94871 4.80012C10.1887 4.56012 10.5637 4.56012 10.8037 4.80012L14.5387 8.55012C14.7637 8.80512 14.7637 9.19511 14.5237 9.42011Z"
+                                    fill="#FF984E" />
+                          </svg>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-item col-lg-3 p-0">
+                <label for=""
+                       class="d-flex flex-row justify-content-lg-start justify-content-center gap-1 align-items-center text-black-1">
+                  Date
+                  <svg class="d-block dropdown-header-icon-drop" width="16" height="16"
+                       viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6L8 10L4 6" stroke="#FF984E" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </label>
+                <input id="date" class="form-control bg-white p-0 text-lg-start text-center"
+                       id="date" name="date" placeholder="When will it start" autocomplete="off"
+                       type="text" />
+              </div>
+              <div class="card-item col-lg-3 p-0">
+                <ul class="p-0 m-0">
+                  <li class="nav-item dropdown list-unstyled">
+                    <a class="nav-link dropdown-toggle p-0" href="#" data-bs-toggle="dropdown">
+                      <label for=""
+                             class="d-flex flex-row justify-content-lg-start justify-content-center gap-1 align-items-center text-black-1">
+                        People
+                        <svg class="d-block dropdown-header-icon-drop" width="16"
+                             height="16" viewBox="0 0 16 16" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6L8 10L4 6" stroke="#FF984E" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </label>
+                      <p class="input m-0" id="people">How many people?</p>
+                      <input id="people_target" type="text"
+                             class="bg-white p-0 text-lg-start text-center d-none"
+                             placeholder="How many people?" disabled />
+                    </a>
+                    <ul class="dropdown-menu p-3 border-0" style="cursor: pointer">
+                      <li id="people1" class="cursor-pointer">
+                        <div
+                                class="dropdown-header-hover h-100 d-flex p-3 align-items-center justify-content-between text-start gap-4">
+                          <div class="flex-grow-0">
+                            <h2 class="item-title">Solo</h2>
+                            <p class="item-caption mb-0 text-gray-3">
+                              1 People
+                            </p>
+                          </div>
+                          <svg class="dropdown-header-icon-arrow d-none" width="18"
+                               height="18" viewBox="0 0 18 18" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M14.5237 9.42011L10.7887 13.1701C10.6687 13.2901 10.5187 13.3501 10.3687 13.3501C10.2187 13.3501 10.0687 13.2901 9.94871 13.1701C9.70871 12.9301 9.70871 12.5551 9.94871 12.3151L12.6637 9.58512H3.90371C3.57371 9.58512 3.30371 9.31512 3.30371 8.98512C3.30371 8.65512 3.57371 8.38512 3.90371 8.38512H12.6637L9.94871 5.65512C9.70871 5.41512 9.70871 5.04012 9.94871 4.80012C10.1887 4.56012 10.5637 4.56012 10.8037 4.80012L14.5387 8.55012C14.7637 8.80512 14.7637 9.19511 14.5237 9.42011Z"
+                                    fill="#FF984E" />
+                          </svg>
+                        </div>
+                      </li>
+                      <li id="people2" class="cursor-pointer">
+                        <div
+                                class="dropdown-header-hover h-100 d-flex p-3 align-items-center justify-content-between text-start gap-4">
+                          <div class="flex-grow-0">
+                            <h2 class="item-title">Couple</h2>
+                            <p class="item-caption mb-0 text-gray-3">
+                              1-2 People
+                            </p>
+                          </div>
+                          <svg class="dropdown-header-icon-arrow d-none" width="18"
+                               height="18" viewBox="0 0 18 18" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M14.5237 9.42011L10.7887 13.1701C10.6687 13.2901 10.5187 13.3501 10.3687 13.3501C10.2187 13.3501 10.0687 13.2901 9.94871 13.1701C9.70871 12.9301 9.70871 12.5551 9.94871 12.3151L12.6637 9.58512H3.90371C3.57371 9.58512 3.30371 9.31512 3.30371 8.98512C3.30371 8.65512 3.57371 8.38512 3.90371 8.38512H12.6637L9.94871 5.65512C9.70871 5.41512 9.70871 5.04012 9.94871 4.80012C10.1887 4.56012 10.5637 4.56012 10.8037 4.80012L14.5387 8.55012C14.7637 8.80512 14.7637 9.19511 14.5237 9.42011Z"
+                                    fill="#FF984E" />
+                          </svg>
+                        </div>
+                      </li>
+                      <li id="people3" class="cursor-pointer">
+                        <div
+                                class="dropdown-header-hover h-100 d-flex p-3 align-items-center justify-content-between text-start gap-4">
+                          <div class="flex-grow-0">
+                            <h2 class="item-title">Group</h2>
+                            <p class="item-caption mb-0 text-gray-3">
+                              10-50+ people
+                            </p>
+                          </div>
+                          <svg class="dropdown-header-icon-arrow d-none" width="18"
+                               height="18" viewBox="0 0 18 18" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M14.5237 9.42011L10.7887 13.1701C10.6687 13.2901 10.5187 13.3501 10.3687 13.3501C10.2187 13.3501 10.0687 13.2901 9.94871 13.1701C9.70871 12.9301 9.70871 12.5551 9.94871 12.3151L12.6637 9.58512H3.90371C3.57371 9.58512 3.30371 9.31512 3.30371 8.98512C3.30371 8.65512 3.57371 8.38512 3.90371 8.38512H12.6637L9.94871 5.65512C9.70871 5.41512 9.70871 5.04012 9.94871 4.80012C10.1887 4.56012 10.5637 4.56012 10.8037 4.80012L14.5387 8.55012C14.7637 8.80512 14.7637 9.19511 14.5237 9.42011Z"
+                                    fill="#FF984E" />
+                          </svg>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-item col-lg-3 p-0">
+                <button class="btn btn-explore btn-fill text-white" type="submit">
+                  Explore Now
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+  </script>
+
+  <script>
+    //Datepicker
+    var date_input = $('input[name="date"]'); //our date input has the name "date"
+    var container =
+            $(".bootstrap-iso form").length > 0 ?
+                    $(".bootstrap-iso form").parent() :
+                    "body";
+    var options = {
+      format: "mm/dd/yyyy",
+      container: container,
+      todayHighlight: true,
+      autoclose: true,
+    };
+    date_input.datepicker(options);
+
+    document.getElementById("date").onclick = function () {
+      date();
+    };
+
+    function date() {
+      const prev = document.getElementsByClassName("prev");
+      const next = document.getElementsByClassName("next");
+      for (i = 0; i < 5; i++) {
+        prev[
+                i
+                ].innerHTML = `<svg class="h-4 w-4 text-gray-500 inline-flex" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92734 4.44067L2.52734 8.94067M2.52734 8.94067L6.92734 13.4407M2.52734 8.94067L13.5273 8.94067" stroke="#FF984E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>`;
+        next[
+                i
+                ].innerHTML = `<svg class="h-4 w-4 text-gray-500 inline-flex" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.12734 3.50659L13.5273 8.00659M13.5273 8.00659L9.12734 12.5066M13.5273 8.00659L2.52734 8.00659" stroke="#FF984E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>`;
+      }
+    }
+  </script>
+  <script>
+    const loc1 = document.getElementById("loc1");
+    loc1.addEventListener("click", (event) => {
+      document.getElementById(
+              "location"
+      ).innerHTML = document.querySelector(
+              "#loc1 > div > div > h2"
+      ).innerHTML;
+      document
+              .getElementById("location_target")
+              .setAttribute(
+                      "value",
+                      document.querySelector("#loc1 > div > div > h2").innerHTML
+              );
+    });
+    const loc2 = document.getElementById("loc2");
+    loc2.addEventListener("click", (event) => {
+      document.getElementById(
+              "location"
+      ).innerHTML = document.querySelector(
+              "#loc2 > div > div > h2"
+      ).innerHTML;
+      document
+              .getElementById("location_target")
+              .setAttribute(
+                      "value",
+                      document.querySelector("#loc2 > div > div > h2").innerHTML
+              );
+    });
+    const loc3 = document.getElementById("loc3");
+    loc3.addEventListener("click", (event) => {
+      document.getElementById(
+              "location"
+      ).innerHTML = document.querySelector(
+              "#loc3 > div > div > h2"
+      ).innerHTML;
+      document
+              .getElementById("location_target")
+              .setAttribute(
+                      "value",
+                      document.querySelector("#loc3 > div > div > h2").innerHTML
+              );
+    });
+    const people1 = document.getElementById("people1");
+    people1.addEventListener("click", (event) => {
+      document.getElementById("people").innerHTML = "Solo (1 People)";
+      document
+              .getElementById("people_target")
+              .setAttribute("value", "Solo (1 People)");
+    });
+    const people2 = document.getElementById("people2");
+    people2.addEventListener("click", (event) => {
+      document.getElementById("people").innerHTML = "Couple (1-2 People)";
+      document
+              .getElementById("people_target")
+              .setAttribute("value", "Couple (1-2 People)");
+    });
+    const people3 = document.getElementById("people3");
+    people3.addEventListener("click", (event) => {
+      document.getElementById("people").innerHTML = "Group (10-50+ People)";
+      document
+              .getElementById("people_target")
+              .setAttribute("value", "Group (10-50+ People)");
+    });
+  </script>
+</section>

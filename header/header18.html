@@ -1,0 +1,435 @@
+<section class="h-100 w-100 position-relative" style="box-sizing: border-box">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    .header-6-5 .navbar-light .navbar-nav .nav-link {
+      font: normal 0.75rem/1rem Poppins, sans-serif;
+      color: #130f48;
+      letter-spacing: 0.1em;
+      transition: 0.3s;
+    }
+
+    .header-6-5 .navbar-light .navbar-nav .nav-link.active,
+    .header-6-5 .navbar-light .navbar-nav .nav-link:hover {
+      font-weight: 600;
+      color: #121212;
+    }
+
+    .header-6-5 .btn-login {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      padding: 1rem 1.75rem;
+      letter-spacing: 0.1em;
+    }
+
+    .header-6-5 .btn-register {
+      font: 700 0.75rem/1rem Poppins, sans-serif;
+      padding: 1rem 2.25rem;
+      letter-spacing: 0.1em;
+      border-radius: 999px;
+      background-color: #ff3ea6;
+      transition: 0.3s;
+    }
+
+    .header-6-5 .btn-register:hover {
+      background-color: #f50e8b;
+      transition: 0.3s;
+    }
+
+    .header-6-5 .nav-main {
+      padding: 2.25rem 2rem 2.5rem;
+    }
+
+    .header-6-5 p {
+      margin: 0;
+    }
+
+    .header-6-5 .left-column .icon-arrow,
+    .header-6-5 .btn-get .btn-arrow {
+      left: 0px;
+      transition: 0.4s;
+      position: relative;
+    }
+
+    .header-6-5 .left-column:hover .icon-arrow,
+    .header-6-5 .btn-get:hover .btn-arrow {
+      left: 3px;
+      transition: 0.4s;
+      position: relative;
+    }
+
+    .header-6-5 .card-item {
+      border-radius: 1.5rem;
+      padding: 1.5rem 1.5rem 2rem;
+      margin-top: 2.5rem;
+      box-shadow: 20px 40px 80px 0px rgba(64, 73, 98, 0.2);
+      transition: 0.4s;
+      top: 0px;
+      left: 0px;
+      position: relative;
+    }
+
+    .header-6-5 .card-item:hover {
+      box-shadow: 20px 40px 80px 0px rgba(37, 43, 59, 0.2);
+      top: -3px;
+      left: -3px;
+      position: relative;
+      transition: 0.4s;
+    }
+
+    .header-6-5 .btn-get {
+      font: 500 1.125rem/1.75rem Poppins, sans-serif;
+      padding: 1.25rem 2rem;
+      margin-bottom: 1rem;
+      border-radius: 999px;
+      letter-spacing: 0.025em;
+      background-color: #ff3ea6;
+      transition: 0.3s;
+    }
+
+    .header-6-5 .btn-get:hover {
+      background-color: #f50e8b;
+      transition: 0.3s;
+    }
+
+    .header-6-5 .card-photo {
+      border-radius: 999px;
+      border: 2px solid #ffffff;
+      box-shadow: 0px 8px 20px 0px rgba(95, 95, 95, 0.25);
+    }
+
+    .header-6-5 .title-font {
+      font: 600 2.25rem/1.25 Poppins, sans-serif;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      letter-spacing: -2px;
+    }
+
+    .header-6-5 .caption-font {
+      font: normal 0.875rem/32px Poppins, sans-serif;
+      letter-spacing: 0.1px;
+      margin-bottom: 4rem;
+    }
+
+    .header-6-5 .text-gray-1 {
+      color: #686868;
+    }
+
+    .header-6-5 .text-purple-1 {
+      color: #ff3ea6;
+    }
+
+    .header-6-5 .text-blue-2 {
+      color: #060c45;
+    }
+
+    .header-6-5 .text-black-1 {
+      color: #141818;
+    }
+
+    .header-6-5 .text-green-1 {
+      color: #02bc4d;
+    }
+
+    .header-6-5 .main {
+      padding: 5rem 2rem;
+    }
+
+    .header-6-5 .left-column {
+      z-index: 10;
+      margin-bottom: 0.75rem;
+    }
+
+    .header-6-5 .caption-top {
+      font: 500 1.125rem/1.75rem Poppins, sans-serif;
+      letter-spacing: 0.025em;
+    }
+
+    .header-6-5 .hero-img {
+      bottom: 0;
+      right: 2rem;
+    }
+
+    .header-6-5 .card-block {
+      padding-left: 0rem;
+      z-index: 1;
+    }
+
+    .header-6-5 .user-name {
+      font: 600 1rem/1.5rem Poppins, sans-serif;
+      margin-bottom: 0.25rem;
+    }
+
+    .header-6-5 .user-job {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+
+    .header-6-5 .fund {
+      padding: 0.875rem 1.25rem;
+      border-radius: 1rem;
+    }
+
+    .header-6-5 .fund-title {
+      font: 500 0.75rem/1rem Poppins, sans-serif;
+      margin-bottom: 0.625rem;
+    }
+
+    .header-6-5 .fund-price {
+      font: 600 0.875rem/1.25rem Poppins, sans-serif;
+    }
+
+    .header-6-5 .fund-percent {
+      font: 600 0.875rem/1.25rem Poppins, sans-serif;
+    }
+
+    /* sm */
+    @media (min-width: 576px) {
+      .header-6-5 .title-font {
+        font: 600 3rem/1.25 Poppins, sans-serif;
+      }
+
+      .header-6-5 {
+        background-image: url("http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-18.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+    /* md */
+    @media (min-width: 768px) {
+      .header-6-5 .main {
+        padding: 5rem 4rem;
+      }
+
+      .header-6-5 .left-column {
+        margin-bottom: 3rem;
+      }
+
+      .header-6-5 .btn-get {
+        margin-bottom: 0rem;
+      }
+
+      .header-6-5 .hero-img {
+        right: 4rem;
+      }
+
+      .header-6-5 .card-item {
+        margin-top: 0rem;
+        margin-left: auto;
+      }
+    }
+
+    /* lg */
+    @media (min-width: 992px) {
+      .header-6-5 .main {
+        padding: 5rem 8rem 3rem;
+      }
+
+      .header-6-5 .left-column {
+        margin-bottom: 0rem;
+      }
+
+      .header-6-5 .title-font {
+        font: 600 3.75rem/1.25 Poppins, sans-serif;
+      }
+
+      .header-6-5 .btn-get {
+        margin-bottom: 6rem;
+      }
+
+      .header-6-5 .hero-img {
+        right: 9rem;
+      }
+
+      .header-6-5 .card-block {
+        padding-left: 4rem;
+      }
+
+      .header-6-5 nav .active {
+        position: relative;
+        padding-bottom: 12px;
+        padding-top: 8px;
+      }
+
+      .header-6-5 nav .active:before {
+        content: "";
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+        height: auto;
+        border-radius: 999px;
+        width: 5%;
+        border: 3px solid #ff3ea6;
+      }
+
+      .header-6-5 .nav-main {
+        padding: 2.25rem 4rem 2.5rem;
+      }
+    }
+
+    /* xl */
+    @media (min-width: 1200px) {
+      .header-6-5 .title-font {
+        font: 600 4.5rem/1.25 Poppins, sans-serif;
+      }
+    }
+  </style>
+  <!-- Navbar -->
+  <div class="header-6-5 container-xxl mx-auto p-0 position-relative" style="font-family: 'Poppins', sans-serif">
+    <nav class="nav-main navbar navbar-expand-lg navbar-light" style="font-family: Poppins, sans-serif">
+      <div class="container-xxl p-0 gap-3">
+        <a class="navbar-brand" href="#">
+          <svg width="149" height="30" viewBox="0 0 149 30" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M10.3218 18.694L8.00947 21.0063C7.24412 21.7624 6.21064 22.1851 5.13473 22.1819C4.05882 22.1787 3.02789 21.7498 2.26709 20.9891C1.5063 20.2283 1.07745 19.1973 1.07421 18.1214C1.07096 17.0455 1.49358 16.012 2.24976 15.2466L5.70349 11.7929C5.7017 11.7321 5.70047 11.6711 5.70047 11.61C5.70014 11.0956 5.76616 10.5834 5.89693 10.0859L1.49342 14.4894C0.534593 15.4551 -0.00242193 16.7615 8.21199e-06 18.1223C0.00243836 19.4832 0.544115 20.7876 1.50638 21.7498C2.46865 22.7121 3.77307 23.2537 5.13392 23.2561C6.49476 23.2586 7.80109 22.7215 8.76676 21.7627L11.079 19.4505L10.3218 18.694Z"
+                    fill="#9D3AFF" />
+            <path
+                    d="M18.1626 23.2673C17.4872 23.2684 16.8183 23.1361 16.1942 22.8779C15.5702 22.6199 15.0032 22.2409 14.526 21.7631L8.00955 15.2466C7.04728 14.2817 6.50734 12.9742 6.5083 11.6115C6.50927 10.2487 7.05106 8.94203 8.0147 7.97843C8.97834 7.01483 10.285 6.47308 11.6478 6.47217C13.0106 6.47126 14.318 7.01125 15.2829 7.97356L21.7993 14.49C22.5189 15.2089 23.0091 16.1252 23.2077 17.1229C23.4064 18.1204 23.3046 19.1546 22.9152 20.0944C22.5258 21.0341 21.8664 21.8372 21.0204 22.4021C20.1744 22.9669 19.1799 23.2679 18.1627 23.2673H18.1626ZM15.2829 21.0064C16.0486 21.7611 17.0815 22.1824 18.1566 22.1785C19.2316 22.1746 20.2615 21.7458 21.0217 20.9856C21.7818 20.2254 22.2107 19.1955 22.2145 18.1205C22.2184 17.0455 21.7972 16.0124 21.0425 15.2468L14.5261 8.73038C14.1488 8.34768 13.6997 8.0434 13.2044 7.83508C12.7091 7.62675 12.1775 7.5185 11.6402 7.51655C11.1028 7.51459 10.5704 7.61899 10.0736 7.82372C9.57686 8.02844 9.12544 8.32946 8.74549 8.70941C8.36554 9.08936 8.06453 9.54073 7.8598 10.0375C7.65508 10.5343 7.55068 11.0667 7.55263 11.6041C7.55458 12.1414 7.66283 12.673 7.87116 13.1683C8.07948 13.6636 8.38376 14.1128 8.76646 14.49L15.2829 21.0064Z"
+                    fill="#9D3AFF" />
+            <path
+                    d="M21.0422 7.97362L18.73 10.2858L19.4868 11.0427L21.799 8.73044C22.5647 7.97581 23.5977 7.5545 24.6727 7.5584C25.7477 7.5623 26.7776 7.99109 27.5378 8.75127C28.298 9.51144 28.7268 10.5413 28.7307 11.6164C28.7345 12.6914 28.3133 13.7244 27.5586 14.4901L24.1023 17.9464C24.1197 18.5227 24.0538 19.0984 23.9066 19.6558L28.3155 15.2469C29.28 14.2824 29.8218 12.9742 29.8218 11.6102C29.8218 10.2462 29.28 8.93812 28.3155 7.97362C27.3509 7.00913 26.0428 6.46729 24.6788 6.46729C23.3148 6.46729 22.0067 7.00913 21.0422 7.97362Z"
+                    fill="#9D3AFF" />
+            <path
+                    d="M49.992 22H47.256L42.68 15.056V22H39.944V10.688H42.68L47.256 17.696V10.688H49.992V22ZM60.8615 17.296C60.8615 17.52 60.8348 17.7653 60.7815 18.032H54.5895C54.6215 18.704 54.7922 19.1893 55.1015 19.488C55.4108 19.776 55.8055 19.92 56.2855 19.92C56.6908 19.92 57.0268 19.8187 57.2935 19.616C57.5602 19.4133 57.7362 19.152 57.8215 18.832H60.7175C60.6002 19.4613 60.3442 20.0267 59.9495 20.528C59.5548 21.0187 59.0535 21.408 58.4455 21.696C57.8375 21.9733 57.1602 22.112 56.4135 22.112C55.5388 22.112 54.7602 21.9307 54.0775 21.568C53.4055 21.1947 52.8775 20.6613 52.4935 19.968C52.1095 19.2747 51.9175 18.464 51.9175 17.536C51.9175 16.5973 52.1042 15.7867 52.4775 15.104C52.8615 14.4107 53.3948 13.8827 54.0775 13.52C54.7602 13.1467 55.5388 12.96 56.4135 12.96C57.2988 12.96 58.0775 13.1413 58.7495 13.504C59.4215 13.8667 59.9388 14.3787 60.3015 15.04C60.6748 15.6907 60.8615 16.4427 60.8615 17.296ZM58.0935 16.88C58.1042 16.2933 57.9442 15.856 57.6135 15.568C57.2935 15.2693 56.8935 15.12 56.4135 15.12C55.9122 15.12 55.4962 15.2693 55.1655 15.568C54.8348 15.8667 54.6482 16.304 54.6055 16.88H58.0935ZM66.9638 12.96C67.8491 12.96 68.6384 13.1467 69.3318 13.52C70.0358 13.8827 70.5851 14.4107 70.9798 15.104C71.3851 15.7973 71.5878 16.608 71.5878 17.536C71.5878 18.464 71.3851 19.2747 70.9798 19.968C70.5851 20.6613 70.0358 21.1947 69.3318 21.568C68.6384 21.9307 67.8491 22.112 66.9638 22.112C66.0784 22.112 65.2838 21.9307 64.5798 21.568C63.8758 21.1947 63.3211 20.6613 62.9158 19.968C62.5211 19.2747 62.3238 18.464 62.3238 17.536C62.3238 16.608 62.5211 15.7973 62.9158 15.104C63.3211 14.4107 63.8758 13.8827 64.5798 13.52C65.2838 13.1467 66.0784 12.96 66.9638 12.96ZM66.9638 15.328C66.4411 15.328 65.9984 15.52 65.6358 15.904C65.2838 16.2773 65.1078 16.8213 65.1078 17.536C65.1078 18.2507 65.2838 18.7947 65.6358 19.168C65.9984 19.5413 66.4411 19.728 66.9638 19.728C67.4864 19.728 67.9238 19.5413 68.2758 19.168C68.6278 18.7947 68.8038 18.2507 68.8038 17.536C68.8038 16.8213 68.6278 16.2773 68.2758 15.904C67.9238 15.52 67.4864 15.328 66.9638 15.328ZM77.6345 19.328L79.5705 13.072H82.4825L79.3145 22H75.9225L72.7545 13.072H75.6665L77.6345 19.328ZM92.5959 17.296C92.5959 17.52 92.5692 17.7653 92.5159 18.032H86.3239C86.3559 18.704 86.5265 19.1893 86.8359 19.488C87.1452 19.776 87.5399 19.92 88.0199 19.92C88.4252 19.92 88.7612 19.8187 89.0279 19.616C89.2945 19.4133 89.4705 19.152 89.5559 18.832H92.4519C92.3345 19.4613 92.0785 20.0267 91.6839 20.528C91.2892 21.0187 90.7879 21.408 90.1799 21.696C89.5719 21.9733 88.8945 22.112 88.1479 22.112C87.2732 22.112 86.4945 21.9307 85.8119 21.568C85.1399 21.1947 84.6119 20.6613 84.2279 19.968C83.8439 19.2747 83.6519 18.464 83.6519 17.536C83.6519 16.5973 83.8385 15.7867 84.2119 15.104C84.5959 14.4107 85.1292 13.8827 85.8119 13.52C86.4945 13.1467 87.2732 12.96 88.1479 12.96C89.0332 12.96 89.8119 13.1413 90.4839 13.504C91.1559 13.8667 91.6732 14.3787 92.0359 15.04C92.4092 15.6907 92.5959 16.4427 92.5959 17.296ZM89.8279 16.88C89.8385 16.2933 89.6785 15.856 89.3479 15.568C89.0279 15.2693 88.6279 15.12 88.1479 15.12C87.6465 15.12 87.2305 15.2693 86.8999 15.568C86.5692 15.8667 86.3825 16.304 86.3399 16.88H89.8279ZM97.7701 12.96C98.9008 12.96 99.8021 13.2427 100.474 13.808C101.157 14.3733 101.583 15.12 101.754 16.048H99.1941C99.1195 15.6853 98.9488 15.4027 98.6821 15.2C98.4261 14.9867 98.1008 14.88 97.7061 14.88C97.3968 14.88 97.1621 14.9493 97.0021 15.088C96.8421 15.216 96.7621 15.4027 96.7621 15.648C96.7621 15.9253 96.9061 16.1333 97.1941 16.272C97.4928 16.4107 97.9568 16.5493 98.5861 16.688C99.2688 16.848 99.8288 17.0133 100.266 17.184C100.703 17.344 101.082 17.6107 101.402 17.984C101.722 18.3573 101.882 18.8587 101.882 19.488C101.882 20 101.743 20.4533 101.466 20.848C101.189 21.2427 100.789 21.552 100.266 21.776C99.7435 22 99.1248 22.112 98.4101 22.112C97.2048 22.112 96.2395 21.8453 95.5141 21.312C94.7888 20.7787 94.3461 20.016 94.1861 19.024H96.8261C96.8688 19.408 97.0288 19.7013 97.3061 19.904C97.5941 20.1067 97.9621 20.208 98.4101 20.208C98.7195 20.208 98.9541 20.1387 99.1141 20C99.2741 19.8507 99.3541 19.6587 99.3541 19.424C99.3541 19.1147 99.2048 18.896 98.9061 18.768C98.6181 18.6293 98.1435 18.4853 97.4821 18.336C96.8208 18.1973 96.2768 18.048 95.8501 17.888C95.4235 17.728 95.0555 17.472 94.7461 17.12C94.4368 16.7573 94.2821 16.2667 94.2821 15.648C94.2821 14.848 94.5861 14.2027 95.1941 13.712C95.8021 13.2107 96.6608 12.96 97.7701 12.96ZM115.465 12.976C116.564 12.976 117.428 13.3173 118.057 14C118.686 14.672 119.001 15.6107 119.001 16.816V22H116.281V17.136C116.281 16.5707 116.126 16.1333 115.817 15.824C115.518 15.504 115.108 15.344 114.585 15.344C114.041 15.344 113.609 15.5147 113.289 15.856C112.98 16.1867 112.825 16.656 112.825 17.264V22H110.089V17.136C110.089 16.5707 109.94 16.1333 109.641 15.824C109.342 15.504 108.932 15.344 108.409 15.344C107.865 15.344 107.433 15.5093 107.113 15.84C106.793 16.1707 106.633 16.6453 106.633 17.264V22H103.897V13.072H106.633V14.592C106.868 14.0907 107.225 13.696 107.705 13.408C108.196 13.12 108.766 12.976 109.417 12.976C110.1 12.976 110.702 13.136 111.225 13.456C111.748 13.7653 112.142 14.2133 112.409 14.8C112.718 14.2453 113.14 13.8027 113.673 13.472C114.217 13.1413 114.814 12.976 115.465 12.976ZM129.799 17.296C129.799 17.52 129.772 17.7653 129.719 18.032H123.527C123.559 18.704 123.73 19.1893 124.039 19.488C124.348 19.776 124.743 19.92 125.223 19.92C125.628 19.92 125.964 19.8187 126.231 19.616C126.498 19.4133 126.674 19.152 126.759 18.832H129.655C129.538 19.4613 129.282 20.0267 128.887 20.528C128.492 21.0187 127.991 21.408 127.383 21.696C126.775 21.9733 126.098 22.112 125.351 22.112C124.476 22.112 123.698 21.9307 123.015 21.568C122.343 21.1947 121.815 20.6613 121.431 19.968C121.047 19.2747 120.855 18.464 120.855 17.536C120.855 16.5973 121.042 15.7867 121.415 15.104C121.799 14.4107 122.332 13.8827 123.015 13.52C123.698 13.1467 124.476 12.96 125.351 12.96C126.236 12.96 127.015 13.1413 127.687 13.504C128.359 13.8667 128.876 14.3787 129.239 15.04C129.612 15.6907 129.799 16.4427 129.799 17.296ZM127.031 16.88C127.042 16.2933 126.882 15.856 126.551 15.568C126.231 15.2693 125.831 15.12 125.351 15.12C124.85 15.12 124.434 15.2693 124.103 15.568C123.772 15.8667 123.586 16.304 123.543 16.88H127.031ZM137.389 12.976C138.413 12.976 139.224 13.3173 139.821 14C140.429 14.6827 140.733 15.6213 140.733 16.816V22H137.997V17.136C137.997 16.5387 137.837 16.0747 137.517 15.744C137.208 15.4027 136.792 15.232 136.269 15.232C135.715 15.232 135.272 15.408 134.941 15.76C134.621 16.112 134.461 16.6133 134.461 17.264V22H131.725V13.072H134.461V14.704C134.717 14.1707 135.096 13.7493 135.597 13.44C136.109 13.1307 136.707 12.976 137.389 12.976ZM148.094 19.648V22H146.862C145.816 22 145 21.744 144.414 21.232C143.838 20.7093 143.55 19.8507 143.55 18.656V15.376H142.35V13.072H143.55V10.88H146.286V13.072H148.078V15.376H146.286V18.704C146.286 19.056 146.355 19.3013 146.494 19.44C146.643 19.5787 146.888 19.648 147.23 19.648H148.094Z"
+                    fill="#9D3AFF" />
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mb-3 mb-lg-0 gap-2">
+            <li class="nav-item">
+              <a class="nav-link px-md-4 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-4" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-4" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-4" href="#">Team</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a class="btn btn-login" href="">Login</a>
+            <a class="btn btn-register text-white" href="#">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero-header -->
+    <div>
+      <div class="main mx-auto row d-flex flex-lg-row flex-column">
+        <!-- Left Column -->
+        <div
+                class="left-column col-lg-6 flex-lg-grow-0 d-flex flex-column align-items-lg-start text-lg-start align-items-center text-center">
+          <div class="d-flex align-items-center gap-2">
+            <p class="caption-top text-purple-1">Investing Apps</p>
+            <svg class="icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                      d="M19.3653 12.5602L14.3853 17.5602C14.2253 17.7202 14.0253 17.8002 13.8253 17.8002C13.6253 17.8002 13.4253 17.7202 13.2653 17.5602C12.9453 17.2402 12.9453 16.7401 13.2653 16.4201L16.8853 12.7802H5.20527C4.76527 12.7802 4.40527 12.4202 4.40527 11.9802C4.40527 11.5402 4.76527 11.1802 5.20527 11.1802H16.8853L13.2653 7.54016C12.9453 7.22016 12.9453 6.72016 13.2653 6.40016C13.5853 6.08016 14.0853 6.08016 14.4053 6.40016L19.3853 11.4002C19.6853 11.7402 19.6853 12.2602 19.3653 12.5602Z"
+                      fill="#FF3EA6" />
+            </svg>
+          </div>
+          <h1 class="title-font text-blue-2">
+            Your Future Is<br class="d-lg-block d-none" />
+            In Your Hands
+          </h1>
+          <p class="caption-font text-gray-1">
+            Neovestment is a free, simple and powerful app that helps you<br
+                  class="d-md-block d-none" />
+            save, invest, and spend smarter. Protect yourself and invest
+            for<br class="d-md-block d-none" />
+            the future.
+          </p>
+          <button
+                  class="btn btn-get d-inline-flex align-items-center text-white border-0 lg:mb-24 md:mb-0 focus:outline-none">
+            Get Started
+            <svg class="btn-arrow ms-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 5L15.5 12L8.5 19" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <!-- Right Column -->
+        <div
+                class="right-column col-lg-6 text-center justify-content-lg-start justify-content-center d-flex pe-0">
+          <img class="hero-img position-absolute d-lg-block d-none"
+               src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-20.png"
+               alt="" />
+          <div class="card-block d-flex align-items-end">
+            <div class="mx-auto d-flex flex-wrap align-items-center">
+              <div class="card-item d-flex flex-column w-100 gap-3 bg-white">
+                <div class="d-flex align-items-center gap-3">
+                  <div>
+                    <img class="card-photo" style="height: 4rem; width: 4rem"
+                         src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-21.png"
+                         alt="" />
+                  </div>
+                  <div class="text-start">
+                    <p class="user-name text-blue-2">Dianne Russell</p>
+                    <p class="user-job text-gray-1">Investor Moderat</p>
+                  </div>
+                </div>
+                <div class="fund row text-start" style="background-color: #f0efff">
+                  <div class="my-auto col-6 p-0">
+                    <p class="fund-title text-gray-1">Pension Fund</p>
+                    <p class="fund-price text-black-1">$ 1,205</p>
+                  </div>
+                  <div class="col-6 d-flex flex-column justify-content-center">
+                    <svg class="mx-auto mb-1" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="12" fill="#D5FFE6" />
+                      <path d="M11.8171 6.8335L11.8171 16.8335" stroke="#02BC4D"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M7.80083 10.8667L11.8168 6.83337L15.8335 10.8667"
+                            stroke="#02BC4D" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <p class="fund-percent text-center text-green-1">
+                      +16.91%
+                    </p>
+                  </div>
+                </div>
+                <div class="fund row text-start" style="background-color: #f0efff">
+                  <div class="my-auto col-6 p-0">
+                    <p class="fund-title text-gray-1">Savings Fund</p>
+                    <p class="fund-price text-black-1">$ 3,892</p>
+                  </div>
+                  <div class="col-6 d-flex flex-column justify-content-center">
+                    <svg class="mx-auto mb-1" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="12" fill="#D5FFE6" />
+                      <path d="M11.8171 6.8335L11.8171 16.8335" stroke="#02BC4D"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M7.80083 10.8667L11.8168 6.83337L15.8335 10.8667"
+                            stroke="#02BC4D" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <p class="fund-percent text-center text-green-1">
+                      +21.35%
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

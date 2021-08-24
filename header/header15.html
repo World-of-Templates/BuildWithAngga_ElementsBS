@@ -1,0 +1,453 @@
+<section class="w-100" style="
+				box-sizing: border-box;
+				background: radial-gradient(
+					circle,
+					rgba(32, 40, 61, 1) 0%,
+					rgba(22, 27, 41, 1) 130%
+				);
+			">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    .header-6-2 p {
+      margin: 0rem;
+    }
+
+    .header-6-2 .navbar-dark .navbar-nav .nav-link {
+      font: 300 0.875rem/1.25rem Poppins, sans-serif;
+      color: #eeeeee;
+    }
+
+    .header-6-2 .navbar-dark .navbar-nav .nav-link.active {
+      text-decoration: underline;
+    }
+
+    .header-6-2 .navbar-dark .navbar-nav .nav-link.active,
+    .header-6-2 .navbar-dark .navbar-nav .nav-link:hover {
+      font-weight: 500;
+      color: #fd8451;
+      transition: 0.3s;
+    }
+
+    .header-6-2 .navbar-right {
+      width: 100%;
+    }
+
+    .header-6-2 #form-search {
+      border: 1px solid #2d3548;
+      background-color: #232938;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    .header-6-2 #form-search input {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      background-color: #232938;
+      color: #ffffff;
+    }
+
+    .header-6-2 #form-search input::placeholder {
+      color: #798092;
+    }
+
+    .header-6-2 #form-search:focus-within {
+      border: 1px solid #798092;
+    }
+
+    .header-6-2 #form-search:focus-within input {
+      outline: none;
+    }
+
+    .header-6-2 .btn-account {
+      font: 600 1rem/1.5rem Poppins, sans-serif;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      background-color: #fd8451;
+      color: #171c2a;
+      transition: 0.3s;
+    }
+
+    .header-6-2 .btn-account:hover {
+      background-color: #fd9951;
+      color: #171c2a;
+      border: 1px solid #fd9951;
+      transition: 0.3s;
+    }
+
+    .header-6-2 .left-line {
+      width: 3px;
+      height: 80%;
+      background-color: #3e4759;
+    }
+
+    .header-6-2 .btn-get {
+      font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      border: none;
+      color: #171c2a;
+      background-color: #fd8451;
+      transition: 0.1s;
+    }
+
+    .header-6-2 .btn-get:hover {
+      color: #171c2a;
+      background-color: #fd9951;
+      transition: 0.1s;
+    }
+
+    .header-6-2 .btn-get .icon-right {
+      left: 0px;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .header-6-2 .btn-get:hover .icon-right {
+      left: 3px;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .header-6-2 .btn-play {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: #fde151;
+      transition: 0.1s;
+    }
+
+    .header-6-2 .btn-play:hover {
+      background-color: #eed344;
+      transition: 0.1s;
+    }
+
+    .header-6-2 .card-item {
+      height: 280px;
+      width: 210px;
+      overflow: hidden;
+    }
+
+    .header-6-2 .card-item:before {
+      content: "";
+      background-color: #fff;
+      display: block;
+      width: 120%;
+      height: 300px;
+      position: absolute;
+      right: -20px;
+      top: -47px;
+      transform: rotate(7deg);
+    }
+
+    .header-6-2 .card-hover img {
+      top: 76px;
+      left: 0px;
+      right: 0px;
+      transition: 0.4s;
+    }
+
+    .header-6-2 .card-hover:hover img {
+      top: 72px;
+      left: -4px;
+      transition: 0.4s;
+    }
+
+    .header-6-2 .card-hover .card-item {
+      top: 128px;
+      left: 0px;
+      right: 0px;
+      transition: 0.4s;
+    }
+
+    .header-6-2 .card-hover:hover .card-item {
+      top: 124px;
+      left: -4px;
+      right: 0px;
+      transition: 0.4s;
+    }
+
+    .header-6-2 .text-gray-1 {
+      color: #737c8f;
+    }
+
+    .header-6-2 .main {
+      padding: 3rem 2rem 9rem;
+    }
+
+    .header-6-2 .left-column {
+      margin-bottom: 0.75rem;
+    }
+
+    .header-6-2 .caption-top {
+      font: 500 1rem/1.625 Poppins, sans-serif;
+      margin-top: 3rem;
+      letter-spacing: 0.025em;
+    }
+
+    .header-6-2 .title-font {
+      font: 700 2.25rem/1.2 Poppins, sans-serif;
+      margin-top: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .header-6-2 .caption-font {
+      letter-spacing: 0.025em;
+    }
+
+    .header-6-2 .button-div {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header-6-2 .card-text {
+      z-index: 1;
+      left: 0;
+      right: 0;
+      bottom: 3rem;
+    }
+
+    .header-6-2 .food-name {
+      font: 600 1.125rem/1.75rem Poppins, sans-serif;
+      color: #000;
+    }
+
+    .header-6-2 .food-place {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      letter-spacing: 0.025em;
+      color: #9c9c9c;
+    }
+
+    .header-6-2 .btn-try {
+      font: 500 0.875rem/1.25rem Poppins, sans-serif;
+      color: #fd8451;
+    }
+
+    .header-6-2 .btn-try:hover {
+      text-decoration: underline;
+    }
+
+    /* sm */
+    @media (min-width: 576px) {
+      .header-6-2 .main {
+        padding: 4rem 2rem 2.5rem;
+      }
+
+      .header-6-2 .title-font {
+        font: 700 3rem/1.2 Poppins, sans-serif;
+      }
+    }
+
+    /* md */
+    @media (min-width: 768px) {
+      .header-6-2 .main {
+        padding: 4rem 4rem 3rem;
+      }
+
+      .header-6-2 .left-column {
+        margin-bottom: 3rem;
+      }
+    }
+
+    /* lg */
+    @media (min-width: 992px) {
+      .header-6-2 .main {
+        padding: 4rem 6rem 3rem;
+      }
+
+      .header-6-2 .left-column {
+        margin-bottom: 0rem;
+      }
+
+      .header-6-2 .title-font {
+        font: 700 3.75rem/1.2 Poppins, sans-serif;
+      }
+
+      .header-6-2 .caption-font {
+        padding-left: 0.625rem;
+      }
+
+      .header-6-2 .button-div {
+        margin-left: 0rem;
+        margin-right: 0rem;
+      }
+
+      .header-6-2 .navbar-right {
+        width: 50%;
+      }
+
+      .header-6-2 #form-search {
+        margin-top: 0rem;
+      }
+
+      .header-6-2 form#form-search {
+        width: 200px;
+      }
+
+      .header-6-2 .card-hover img {
+        top: 92px;
+        left: 35px;
+        right: auto;
+        transition: 0.4s;
+      }
+
+      .header-6-2 .card-hover:hover img {
+        top: 88px;
+        left: 30px;
+        transition: 0.4s;
+      }
+
+      .header-6-2 .card-hover .card-item {
+        top: 144px;
+        left: 8px;
+        right: auto;
+        transition: 0.4s;
+      }
+
+      .header-6-2 .card-hover:hover .card-item {
+        top: 140px;
+        left: 2px;
+        right: auto;
+        transition: 0.4s;
+      }
+    }
+
+    /* xl */
+    @media (min-width: 1200px) {
+      .header-6-2 form#form-search {
+        width: 350px;
+      }
+    }
+  </style>
+  <!-- Navbar -->
+  <div class="header-6-2 container-xxl mx-auto p-0 position-relative" style="font-family: 'Poppins', sans-serif">
+    <nav class="main navbar navbar-expand-lg navbar-dark" style="padding-top: 1.75rem; padding-bottom: 2.25rem">
+      <div class="container-xxl p-0">
+        <a class="navbar-brand" href="#">
+          <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-10.png"
+               alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link px-md-3 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#">Ingredients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="navbar-right d-flex flex-lg-row flex-column align-items-lg-center gap-4">
+            <form action="" method="" id="form-search" class="d-flex align-items-center">
+              <button class="btn p-0" type="submit">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.5 17.1667C15.6296 17.1667 18.1667 14.6296 18.1667 11.5C18.1667 8.37039 15.6296 5.83333 12.5 5.83333C9.37039 5.83333 6.83333 8.37039 6.83333 11.5C6.83333 14.6296 9.37039 17.1667 12.5 17.1667ZM12.5 20C17.1944 20 21 16.1944 21 11.5C21 6.80558 17.1944 3 12.5 3C7.80558 3 4 6.80558 4 11.5C4 16.1944 7.80558 20 12.5 20Z"
+                        fill="#798092" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18.1342 19.3354C18.902 18.7595 19.9912 18.9152 20.5671 19.683L21.9573 21.5366C22.5332 22.3044 22.3776 23.3937 21.6098 23.9696C20.842 24.5454 19.7527 24.3898 19.1769 23.622L17.7866 21.7683C17.2108 21.0005 17.3664 19.9113 18.1342 19.3354Z"
+                        fill="#798092" />
+                </svg>
+              </button>
+              <input class="ms-2 w-100 border-0" type="text"
+                     placeholder="What do you want to cook today?" />
+            </form>
+            <button class="btn btn-account align-items-center">
+              My Account
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero-header -->
+    <div>
+      <div class="main row mx-auto d-flex flex-lg-row flex-column">
+        <!-- Left Column -->
+        <div
+                class="left-column col-lg-6 flex-lg-grow-0 d-flex flex-column align-items-lg-start text-lg-start align-items-center text-center">
+          <p class="caption-top text-gray-1">Easy way to cook at home</p>
+          <h1 class="title-font text-white">
+            EASILY COOK & <br class="d-lg-block d-none" />TASTY RECIPES
+          </h1>
+          <div class="d-flex align-items-center" style="margin-bottom: 3rem">
+            <div class="d-lg-inline d-none left-line"></div>
+            <p class="caption-font text-gray-1">
+              Tired of always eating out? don't worry<br class="d-sm-block d-none" />
+              because now you can cook at home easily
+            </p>
+          </div>
+          <div
+                  class="button-div d-flex flex-sm-row flex-column align-items-center d-lg-flex justify-content-center gap-3">
+            <button class="btn btn-get font-semibold text-base">
+              <div class="d-flex align-items-center">
+                Get Started
+                <svg class="ms-1 icon-right" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                          d="M19.3653 12.5599L14.3853 17.5599C14.2253 17.7199 14.0253 17.7999 13.8253 17.7999C13.6253 17.7999 13.4253 17.7199 13.2653 17.5599C12.9453 17.2399 12.9453 16.7399 13.2653 16.4199L16.8853 12.7799H5.20527C4.76527 12.7799 4.40527 12.4199 4.40527 11.9799C4.40527 11.5399 4.76527 11.1799 5.20527 11.1799H16.8853L13.2653 7.53991C12.9453 7.21991 12.9453 6.71991 13.2653 6.39991C13.5853 6.07991 14.0853 6.07991 14.4053 6.39991L19.3853 11.3999C19.6853 11.7399 19.6853 12.2599 19.3653 12.5599Z"
+                          fill="#171C2A" />
+                </svg>
+              </div>
+            </button>
+            <button class="btn-play">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M7 17.8802V6.11981C7 5.25685 7.83605 4.71918 8.50177 5.154L17.5046 11.0342C18.1651 11.4656 18.1651 12.5344 17.5046 12.9658L8.50177 18.846C7.83605 19.2808 7 18.7431 7 17.8802Z"
+                        fill="#1B1924" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div
+                class="right-column col-lg-6 position-relative text-center justify-content-lg-start align-items-start justify-content-center d-flex pe-0">
+          <img class="d-lg-block d-none w-100"
+               src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-11.png"
+               alt="" />
+          <img class="d-lg-none d-block w-100" style="object-fit: cover"
+               src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-12.png"
+               alt="" />
+          <div
+                  class="card-hover position-absolute w-100 text-center justify-content-lg-start align-items-start justify-content-center d-flex">
+            <img class="position-absolute mx-auto" style="z-index: 10"
+                 src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-13.png"
+                 alt="" />
+            <div class="card-item position-absolute mx-auto rounded-xl z-1"
+                 style="z-index: 1; border-radius: 0.75rem; border: none">
+              <div class="card-text position-absolute mx-auto">
+                <h5 class="food-name mb-1">Gobta Ramen</h5>
+                <p class="food-place">Japanese Food</p>
+                <hr class="mx-auto" style="
+												margin-top: 1rem;
+												margin-bottom: 1rem;
+												border: none;
+												width: 22px;
+												height: 3px;
+												background-color: #fb5155;
+											" />
+                <a href="#" class="btn btn-try">Try Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,393 @@
+<section class="w-100 bg-white" style="box-sizing: border-box">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+  <!-- CSS -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+    .header-7-2 .navbar-light .navbar-nav .nav-link {
+      font: 500 0.75rem/1rem "Inter", sans-serif;
+      letter-spacing: 0.1em;
+      color: #2c3a4f;
+      transition: 0.3s;
+    }
+
+    .header-7-2 .navbar-light .navbar-nav .nav-link.active,
+    .header-7-2 .navbar-light .navbar-nav .nav-link:hover {
+      font-weight: 600;
+    }
+
+    .header-7-2 .header-sticky.scrolled {
+      background-color: #fff !important;
+      transition: background-color 200ms linear, box-shadow 300ms linear;
+      box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+    }
+
+    .header-7-2 .btn-header {
+      padding: 1rem 2.25rem;
+      font: 700 0.75rem/1rem "Inter", sans-serif;
+      border-radius: 999px;
+      letter-spacing: 0.1em;
+      color: #1a5aff;
+      border: 1px solid #1a5aff;
+      transition: 0.2s;
+    }
+
+    .header-7-2 .btn-header:hover {
+      color: #ffffff;
+      background-color: #1a5aff;
+      border-color: #1a5aff;
+      transition: 0.2s;
+    }
+
+    .header-7-2 .navbar {
+      padding: 1.5rem 2rem;
+    }
+
+    .header-7-2 button:focus {
+      outline: none;
+    }
+
+    .header-7-2 .btn-how {
+      font: 500 1.125rem/1.75rem "Inter", sans-serif;
+      padding: 1rem 2.25rem;
+      border-radius: 999px;
+      border: 1px solid #aaaaaa;
+      color: #aaaaaa;
+      transition: 0.2s;
+    }
+
+    .header-7-2 .btn-how:hover {
+      border: 1px solid #1a5aff;
+      color: #1a5aff;
+      transition: 0.2s;
+    }
+
+    .header-7-2 .btn-contact {
+      font: 500 1.125rem/1.75rem "Inter", sans-serif;
+      padding: 1rem 2.25rem;
+      border-radius: 999px;
+      border: 1px solid #195aff;
+      background-color: #195aff;
+      transition: 0.2s;
+    }
+
+    .header-7-2 .btn-contact:hover {
+      border: 1px solid #0343e5;
+      background-color: #0343e5;
+      transition: 0.2s;
+    }
+
+    .header-7-2 .title-font {
+      font: 800 2.25rem/1.25 "Inter", sans-serif;
+      letter-spacing: -0.025em;
+      color: #113873;
+      margin-bottom: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .header-7-2 .caption-font {
+      font-size: 1rem;
+      line-height: 2rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+      color: #6681a9;
+    }
+
+    .header-7-2 .carousel-number {
+      z-index: 10;
+      position: absolute;
+      font-weight: 800;
+      font-size: 9rem;
+      bottom: 0rem;
+      color: #253753;
+      right: 0px;
+    }
+
+    .header-7-2 .rectangle {
+      z-index: 10;
+      position: absolute;
+      top: 2.25rem;
+      right: 0px;
+    }
+
+    .header-7-2 .owl-carousel .owl-nav button.owl-next,
+    .header-7-2 .owl-carousel .owl-nav button.owl-prev {
+      padding: 14px !important;
+    }
+
+    .header-7-2 .owl-carousel .owl-nav button.owl-prev {
+      background-color: #f8fcfe;
+    }
+
+    .header-7-2 .owl-carousel .owl-nav button.owl-next {
+      background-color: #def7ff;
+    }
+
+    .header-7-2 .owl-theme .owl-nav button.owl-prev:hover {
+      background-color: #def7ff;
+    }
+
+    .header-7-2 .owl-theme .owl-nav button.owl-next:hover {
+      background-color: #a8e8fd;
+    }
+
+    .header-7-2 .carousel-img {
+      height: 620px;
+      width: auto !important;
+    }
+
+    .header-7-2 .owl-theme .owl-nav [class*="owl-"] {
+      margin: 5px 5px 5px 16px;
+    }
+
+    .header-7-2 .main {
+      padding: 2rem 2rem 4rem;
+    }
+
+    .header-7-2 .left-col {
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 576px) {
+      .header-7-2 .title-font {
+        font: 800 3rem/1.25 "Inter", sans-serif;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .header-7-2 .main {
+        padding: 2rem 4rem 4rem;
+      }
+
+      .header-7-2 .left-col {
+        margin-bottom: 6rem;
+      }
+
+      .header-7-2 .title-font {
+        margin-top: 2rem;
+      }
+
+      .header-7-2 .caption-font {
+        margin-bottom: 4rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .header-7-2 {
+        background-image: url("http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header7/Header-7-9.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .header-7-2 .navbar {
+        padding: 1.5rem 3rem;
+      }
+
+      .header-7-2 .main {
+        padding: 2rem 4rem 5rem 7rem;
+      }
+
+      .header-7-2 .left-col {
+        margin-bottom: 0rem;
+      }
+
+      .header-7-2 .title-font {
+        font: 800 4.5rem/1.25 "Inter", sans-serif;
+        margin-top: 3rem;
+      }
+
+      .header-7-2 .caption-font {
+        margin-bottom: 6rem;
+      }
+
+      .header-7-2 .owl-theme .owl-dots,
+      .header-7-2 .owl-theme .owl-nav {
+        position: absolute;
+        bottom: -45px;
+        left: -119px;
+      }
+
+      .header-7-2 .carousel-number {
+        bottom: 2.25rem;
+      }
+
+      .header-7-2 .owl-carousel .owl-nav button.owl-next,
+      .header-7-2 .owl-carousel .owl-nav button.owl-prev {
+        padding: 30px !important;
+      }
+    }
+
+    @media (min-width: 1200px) {}
+
+    @media (min-width: 1380px) {
+      .header-7-2 .rectangle {
+        right: 50px;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      .header-7-2 .carousel-img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100% !important;
+        height: auto;
+      }
+    }
+  </style>
+  <!-- Navbar -->
+  <div class="header-7-2" style="font-family: 'Inter', sans-serif">
+    <div class="container-xxl mx-auto p-0 position-sticky" style="z-index: 50;top: 0;">
+      <nav class="header-sticky navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <svg width="139" height="30" viewBox="0 0 139 30" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M21.9134 4.27075H20.5515C20.0605 4.27075 19.6626 4.66875 19.6626 5.1597V10.1101C19.6626 10.601 20.0605 10.999 20.5515 10.999H21.9134C22.4044 10.999 22.8024 10.601 22.8024 10.1101V5.1597C22.8024 4.66875 22.4044 4.27075 21.9134 4.27075Z"
+                    fill="#41529F" />
+            <path
+                    d="M16.821 29.5245V24.8347H22.5941L17.5868 29.8421C17.5241 29.9049 17.4441 29.9476 17.357 29.9649C17.27 29.9821 17.1798 29.9733 17.0978 29.9393C17.0158 29.9053 16.9457 29.8477 16.8965 29.7738C16.8472 29.7001 16.821 29.6133 16.821 29.5245Z"
+                    fill="#41529F" />
+            <path d="M22.9033 24.5432H16.821V25.1053H22.312L22.9033 24.5432Z" fill="#324293" />
+            <path
+                    d="M24.1538 10.6578L15.8458 2.34908C15.6211 2.12551 15.317 2 15.0001 2C14.6831 2 14.379 2.12551 14.1543 2.34908L5.8465 10.6578C5.33953 11.2217 5.04081 11.942 5 12.6992V14.1627C9.53887 17.5396 15.0475 19.3592 20.7048 19.3501C22.1435 19.3504 23.5799 19.2334 24.9997 19.0005V12.6992C24.9585 11.9422 24.6601 11.2221 24.1538 10.6578Z"
+                    fill="#41529F" />
+            <path
+                    d="M20.705 20.6957C15.0478 20.7046 9.53914 18.8851 5.00024 15.5083V23.414C5.00127 23.731 5.12761 24.0346 5.35169 24.2586C5.57577 24.4827 5.87938 24.609 6.19627 24.6101H23.8041C24.1209 24.609 24.4245 24.4826 24.6486 24.2586C24.8727 24.0344 24.9989 23.7309 25 23.414V20.346C23.5802 20.579 22.1438 20.6959 20.705 20.6957Z"
+                    fill="#41529F" />
+            <path
+                    d="M46.952 19.936H42.712L42.008 22H39.128L43.272 10.768H46.424L50.568 22H47.656L46.952 19.936ZM46.248 17.856L44.84 13.696L43.416 17.856H46.248ZM55.8675 14.752C56.2088 14.208 56.6462 13.776 57.1795 13.456C57.7235 13.136 58.3102 12.976 58.9395 12.976V15.904H58.1555C57.4302 15.904 56.8648 16.0587 56.4595 16.368C56.0648 16.6773 55.8675 17.2 55.8675 17.936V22H53.1315V13.072H55.8675V14.752ZM65.6166 12.96C66.7686 12.96 67.734 13.28 68.5126 13.92C69.2913 14.5493 69.782 15.4187 69.9846 16.528H67.0886C67.0033 16.144 66.8273 15.8453 66.5606 15.632C66.294 15.4187 65.958 15.312 65.5526 15.312C65.0726 15.312 64.678 15.504 64.3686 15.888C64.0593 16.2613 63.9046 16.8107 63.9046 17.536C63.9046 18.2613 64.0593 18.816 64.3686 19.2C64.678 19.5733 65.0726 19.76 65.5526 19.76C65.958 19.76 66.294 19.6533 66.5606 19.44C66.8273 19.2267 67.0033 18.928 67.0886 18.544H69.9846C69.782 19.6533 69.2913 20.528 68.5126 21.168C67.734 21.7973 66.7686 22.112 65.6166 22.112C64.742 22.112 63.9633 21.9307 63.2806 21.568C62.6086 21.1947 62.0806 20.6613 61.6966 19.968C61.3126 19.2747 61.1206 18.464 61.1206 17.536C61.1206 16.5973 61.3073 15.7867 61.6806 15.104C62.0646 14.4107 62.598 13.8827 63.2806 13.52C63.9633 13.1467 64.742 12.96 65.6166 12.96ZM75.2648 19.264V22H72.4328V19.264H75.2648ZM81.586 12.96C82.2687 12.96 82.8553 13.1147 83.346 13.424C83.8367 13.7333 84.194 14.1547 84.418 14.688V10.16H87.154V22H84.418V20.384C84.194 20.9173 83.8367 21.3387 83.346 21.648C82.8553 21.9573 82.2687 22.112 81.586 22.112C80.85 22.112 80.1887 21.9307 79.602 21.568C79.026 21.1947 78.5673 20.6613 78.226 19.968C77.8953 19.2747 77.73 18.464 77.73 17.536C77.73 16.5973 77.8953 15.7867 78.226 15.104C78.5673 14.4107 79.026 13.8827 79.602 13.52C80.1887 13.1467 80.85 12.96 81.586 12.96ZM82.466 15.36C81.8793 15.36 81.4047 15.552 81.042 15.936C80.69 16.32 80.514 16.8533 80.514 17.536C80.514 18.2187 80.69 18.752 81.042 19.136C81.4047 19.52 81.8793 19.712 82.466 19.712C83.042 19.712 83.5113 19.5147 83.874 19.12C84.2473 18.7253 84.434 18.1973 84.434 17.536C84.434 16.864 84.2473 16.336 83.874 15.952C83.5113 15.5573 83.042 15.36 82.466 15.36ZM93.2738 14.752C93.6151 14.208 94.0524 13.776 94.5858 13.456C95.1298 13.136 95.7164 12.976 96.3458 12.976V15.904H95.5618C94.8364 15.904 94.2711 16.0587 93.8658 16.368C93.4711 16.6773 93.2738 17.2 93.2738 17.936V22H90.5378V13.072H93.2738V14.752ZM107.471 17.296C107.471 17.52 107.444 17.7653 107.391 18.032H101.199C101.231 18.704 101.402 19.1893 101.711 19.488C102.02 19.776 102.415 19.92 102.895 19.92C103.3 19.92 103.636 19.8187 103.903 19.616C104.17 19.4133 104.346 19.152 104.431 18.832H107.327C107.21 19.4613 106.954 20.0267 106.559 20.528C106.164 21.0187 105.663 21.408 105.055 21.696C104.447 21.9733 103.77 22.112 103.023 22.112C102.148 22.112 101.37 21.9307 100.687 21.568C100.015 21.1947 99.4869 20.6613 99.1029 19.968C98.7189 19.2747 98.5269 18.464 98.5269 17.536C98.5269 16.5973 98.7135 15.7867 99.0869 15.104C99.4709 14.4107 100.004 13.8827 100.687 13.52C101.37 13.1467 102.148 12.96 103.023 12.96C103.908 12.96 104.687 13.1413 105.359 13.504C106.031 13.8667 106.548 14.3787 106.911 15.04C107.284 15.6907 107.471 16.4427 107.471 17.296ZM104.703 16.88C104.714 16.2933 104.554 15.856 104.223 15.568C103.903 15.2693 103.503 15.12 103.023 15.12C102.522 15.12 102.106 15.2693 101.775 15.568C101.444 15.8667 101.258 16.304 101.215 16.88H104.703ZM113.789 12.96C114.472 12.96 115.058 13.1147 115.549 13.424C116.04 13.7333 116.402 14.1547 116.637 14.688V13.072H119.357V22H116.637V20.384C116.402 20.9173 116.04 21.3387 115.549 21.648C115.058 21.9573 114.472 22.112 113.789 22.112C113.053 22.112 112.392 21.9307 111.805 21.568C111.229 21.1947 110.77 20.6613 110.429 19.968C110.098 19.2747 109.933 18.464 109.933 17.536C109.933 16.5973 110.098 15.7867 110.429 15.104C110.77 14.4107 111.229 13.8827 111.805 13.52C112.392 13.1467 113.053 12.96 113.789 12.96ZM114.669 15.36C114.082 15.36 113.608 15.552 113.245 15.936C112.893 16.32 112.717 16.8533 112.717 17.536C112.717 18.2187 112.893 18.752 113.245 19.136C113.608 19.52 114.082 19.712 114.669 19.712C115.245 19.712 115.714 19.5147 116.077 19.12C116.45 18.7253 116.637 18.1973 116.637 17.536C116.637 16.864 116.45 16.336 116.077 15.952C115.714 15.5573 115.245 15.36 114.669 15.36ZM134.309 12.976C135.408 12.976 136.272 13.3173 136.901 14C137.53 14.672 137.845 15.6107 137.845 16.816V22H135.125V17.136C135.125 16.5707 134.97 16.1333 134.661 15.824C134.362 15.504 133.952 15.344 133.429 15.344C132.885 15.344 132.453 15.5147 132.133 15.856C131.824 16.1867 131.669 16.656 131.669 17.264V22H128.933V17.136C128.933 16.5707 128.784 16.1333 128.485 15.824C128.186 15.504 127.776 15.344 127.253 15.344C126.709 15.344 126.277 15.5093 125.957 15.84C125.637 16.1707 125.477 16.6453 125.477 17.264V22H122.741V13.072H125.477V14.592C125.712 14.0907 126.069 13.696 126.549 13.408C127.04 13.12 127.61 12.976 128.261 12.976C128.944 12.976 129.546 13.136 130.069 13.456C130.592 13.7653 130.986 14.2133 131.253 14.8C131.562 14.2453 131.984 13.8027 132.517 13.472C133.061 13.1413 133.658 12.976 134.309 12.976Z"
+                    fill="#41529F" />
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-5 gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How It Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Request</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a class="btn btn-header" href="#">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero-header -->
+    <div class="container-xxl mx-auto main">
+      <div class="mx-auto row">
+        <!-- Left Column -->
+        <div
+                class="left-col flex-lg-grow-0 col-lg-6 p-0 d-flex flex-column align-items-lg-start text-lg-start align-items-center text-center">
+          <h1 class="title-font">
+            Build your<br />
+            dream house
+          </h1>
+          <p class="caption-font">
+            Consectetur adipiscing elit. A, pretium<br class="d-sm-block d-none" />
+            donec cursus sit in nulla felis convallis.<br class="d-sm-block d-none" />
+            Volutpat faucibus lectus.
+          </p>
+          <div
+                  class="d-inline-block align-items-center mx-auto mx-lg-0 d-lg-flex justify-content-center gap-sm-3 gap-0">
+            <button class="btn btn-contact text-white mb-3 mb-md-0">
+              Contact Us
+            </button>
+            <button class="btn btn-how mb-3 mb-md-0">How We Work</button>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div
+                class="col-lg-6 p-0 text-center justify-content-lg-end justify-content-center d-flex pe-0 position-relative">
+          <div id="owl-header-7-2" class="owl-carousel owl-theme">
+            <div class="item">
+              <svg class="d-lg-block d-none rectangle" width="64" height="144" viewBox="0 0 64 144"
+                   fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="144" fill="#DEF3FF" />
+              </svg>
+              <img class="carousel-img"
+                   src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header7/Header-7-6.png"
+                   alt="" />
+              <p class="carousel-number m-0" style="letter-spacing: 0.025em">
+                01
+              </p>
+            </div>
+            <div class="item">
+              <svg class="d-lg-block d-none rectangle" width="64" height="144" viewBox="0 0 64 144"
+                   fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="144" fill="#DEF3FF" />
+              </svg>
+              <img class="carousel-img"
+                   src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header7/Header-7-7.png"
+                   alt="" />
+              <p class="carousel-number m-0" style="letter-spacing: 0.025em">
+                02
+              </p>
+            </div>
+            <div class="item">
+              <svg class="d-lg-block d-none rectangle" width="64" height="144" viewBox="0 0 64 144"
+                   fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="144" fill="#DEF3FF" />
+              </svg>
+              <img class="carousel-img"
+                   src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header7/Header-7-8.png"
+                   alt="" />
+              <p class="carousel-number m-0" style="letter-spacing: 0.025em">
+                03
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"
+          integrity="sha512-M+qMI1PHRcYcOpJzeJlaWbVVx2JJyPIwZas8or7dc97LZOokjvbpfRxymhVtlJLyjiF3wGyr0FJOA4DLONLVLw=="
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Owl Carousel Script -->
+  <script>
+    $("#owl-header-7-2").owlCarousel({
+      loop: true,
+      nav: true,
+      navText: [
+        "<img src='http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header7/Header-7-4.png'>",
+        "<img src='http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header7/Header-7-5.png'>",
+      ],
+      dots: false,
+      items: 1,
+    });
+  </script>
+
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".header-7-2 .header-sticky");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
+</section>

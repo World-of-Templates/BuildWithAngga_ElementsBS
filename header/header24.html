@@ -1,0 +1,474 @@
+<section class="w-100" style="box-sizing: border-box; background-color: #081b21">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .header-8-1 .navbar-dark .navbar-nav .nav-link {
+      font: 600 0.875rem/1.5rem "Inter", sans-serif;
+      color: #adadad;
+      transition: 0.1s;
+    }
+
+    .header-8-1 .navbar-dark .navbar-nav .nav-link.active,
+    .header-8-1 .navbar-dark .navbar-nav .nav-link:hover {
+      color: #ffffff;
+      transition: 0.1s;
+    }
+
+    .header-8-1 .header-sticky.scrolled {
+      background-color: #081b21 !important;
+      transition: box-shadow 300ms linear;
+      box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+      padding-bottom: 34px;
+      padding-top: 34px;
+    }
+
+    .header-8-1 .main-navbar {
+      padding: 3rem 2rem 2.75rem;
+    }
+
+    .header-8-1 .main {
+      padding: 2.5rem 2rem 2rem;
+    }
+
+    .header-8-1 .btn-get {
+      font-weight: 700;
+      padding: 1.25rem 2rem;
+      letter-spacing: 0.025em;
+      border-radius: 0rem;
+      background-color: #d75a00;
+      transition: 0.2s;
+    }
+
+    .header-8-1 .btn-get:hover {
+      transition: 0.2s;
+      background-color: #b54c01;
+    }
+
+    .header-8-1 #owl-header-8-1-1.owl-carousel {
+      width: 18% !important;
+      font-family: "Bebas Neue", cursive;
+      position: absolute;
+      height: auto !important;
+      bottom: 18px;
+    }
+
+    .header-8-1 #owl-header-8-1-2.owl-carousel {
+      width: auto;
+      margin-left: 125px;
+    }
+
+    .header-8-1 .right-line {
+      width: 2px;
+      height: 100px;
+      background: #676767;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header-8-1 .center-line {
+      width: 50px;
+      height: 2px;
+      background: #676767;
+    }
+
+    .header-8-1 .vertical-text {
+      writing-mode: vertical-rl;
+      -moz-transform: scale(-1, -1);
+      -webkit-transform: scale(-1, -1);
+      -o-transform: scale(-1, -1);
+      -ms-transform: scale(-1, -1);
+      transform: scale(-1, -1);
+    }
+
+    .header-8-1 .vertical-text.scroll {
+      margin: 0rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .header-8-1 .agency {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      padding-bottom: 9rem;
+      padding-top: 10rem;
+      color: #adadad;
+    }
+
+    .header-8-1 .frame {
+      position: relative;
+      width: 98%;
+    }
+
+    .header-8-1 .frame::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      box-sizing: border-box;
+      border: 2px solid #fff;
+      transform: translate(17px, 17px);
+      transition: transform 250ms ease;
+    }
+
+    .header-8-1 .frame:hover::before {
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      transform: translate(0px, 0px);
+    }
+
+    .header-8-1 .mouse {
+      animation: mouse-move 1.8s ease infinite;
+    }
+
+    .header-8-1 .left-col,
+    .header-8-1 .right-col {
+      width: 100%;
+    }
+
+    .header-8-1 .left-col {
+      margin-bottom: 3rem;
+    }
+
+    .header-8-1 .title-font {
+      font-size: 3.75rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+      margin-top: 5rem;
+    }
+
+    .header-8-1 .caption-font {
+      font-weight: 500;
+      line-height: 2.25rem;
+      letter-spacing: 0.025em;
+      margin-bottom: 2rem;
+      color: #adadad;
+    }
+
+    .header-8-1 .btn-div {
+      margin-bottom: 6rem;
+    }
+
+    .header-8-1 .item-margin {
+      margin: 1.25rem 1rem 1.25rem 0rem;
+    }
+
+    .header-8-1 .carousel-number {
+      font: 500 4.5rem/1 "Bebas Neue", cursive;
+      letter-spacing: 0.025em;
+      margin: 0rem;
+    }
+
+    .header-8-1 .carousel-number .carousel-number-span {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      font-family: "Bebas Neue", cursive;
+    }
+
+    @keyframes mouse-move {
+      0% {
+        top: -20px;
+        position: relative;
+      }
+
+      50% {
+        top: 20px;
+        position: relative;
+      }
+
+      100% {
+        top: -20px;
+        position: relative;
+      }
+    }
+
+    @media (min-width: 576px) {
+      .header-8-1 .title-font {
+        line-height: 1.25;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .header-8-1 .main {
+        padding: 2.5rem 4rem 2rem;
+      }
+
+      .header-8-1 .main-navbar {
+        padding: 3rem 4rem 2.75rem;
+      }
+
+      .header-8-1 .left-col {
+        margin-bottom: 4rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .header-8-1 .main {
+        padding: 0.625rem 3rem 2rem 6rem;
+      }
+
+      .header-8-1 .main-navbar {
+        padding: 3rem 6rem 2.75rem;
+      }
+
+      .header-8-1 .left-col {
+        width: 40%;
+        margin-bottom: 0rem;
+      }
+
+      .header-8-1 .right-col {
+        width: 60%;
+      }
+
+      .header-8-1 .title-font {
+        font-size: 4.5rem;
+      }
+
+      .header-8-1 .btn-div {
+        margin-bottom: 9rem;
+      }
+
+      .header-8-1 .item-margin {
+        margin: 1.25rem 3rem 1.25rem 0rem;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .header-8-1 .main {
+        padding: 0.625rem 3rem 2rem 9rem;
+      }
+
+      .header-8-1 .main-navbar {
+        padding: 3rem 9rem 2.75rem;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .header-8-1 .left-col {
+        order: 2;
+      }
+
+      .header-8-1 .right-col {
+        order: 1;
+      }
+
+      .header-8-1 .frame::before {
+        transform: translate(12px, 12px);
+        transition: transform 250ms ease;
+      }
+
+      .header-8-1 #owl-header-8-1-1.owl-carousel {
+        width: 100% !important;
+        font-family: "Bebas Neue", cursive;
+        position: relative;
+        bottom: -24px;
+      }
+
+      .header-8-1 #owl-header-8-1-2.owl-carousel {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+
+  <div class="header-8-1" style="font-family: 'Inter', sans-serif">
+    <!-- Navbar -->
+    <div class="container-xxl mx-auto p-0 position-sticky" style="z-index: 50; top: 0">
+      <nav class="header-sticky main-navbar navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <svg width="58" height="16" viewBox="0 0 58 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M0.851562 15.0352C0.289062 15.0352 0.0078125 14.8828 0.0078125 14.5781V1.04297C0.0078125 0.824219 0.0585938 0.667969 0.160156 0.574219C0.261719 0.472656 0.421875 0.421875 0.640625 0.421875H4.14453C5.80859 0.421875 7.05859 0.714844 7.89453 1.30078C8.73828 1.88672 9.16016 2.82031 9.16016 4.10156C9.16016 4.96875 8.94922 5.69922 8.52734 6.29297C8.11328 6.87891 7.52734 7.32031 6.76953 7.61719V7.69922C7.17578 7.83984 7.50781 8.11328 7.76562 8.51953C8.03125 8.91797 8.32422 9.51172 8.64453 10.3008L10.2734 14.4141C10.3125 14.5547 10.332 14.6523 10.332 14.707C10.332 14.9258 10.0391 15.0352 9.45312 15.0352H9.24219C9.03125 15.0352 8.84766 15.0078 8.69141 14.9531C8.54297 14.8906 8.44922 14.8086 8.41016 14.707L6.82812 10.6172C6.625 10.0859 6.38672 9.67188 6.11328 9.375C5.83984 9.07812 5.51562 8.87109 5.14062 8.75391C4.76562 8.63672 4.29297 8.57812 3.72266 8.57812H1.84766V14.5781C1.84766 14.8828 1.57031 15.0352 1.01562 15.0352H0.851562ZM4.58984 6.99609C5.08203 6.99609 5.53125 6.87891 5.9375 6.64453C6.35156 6.41016 6.67578 6.09766 6.91016 5.70703C7.15234 5.30859 7.27344 4.88672 7.27344 4.44141C7.27344 3.62109 7.02344 3.01172 6.52344 2.61328C6.02344 2.20703 5.33203 2.00391 4.44922 2.00391H1.84766V6.99609H4.58984ZM12.3672 15.0352C12.0547 15.0352 11.8281 15.0078 11.6875 14.9531C11.5469 14.8906 11.4766 14.8008 11.4766 14.6836C11.4766 14.6289 11.4961 14.5352 11.5352 14.4023L16.4688 0.703125C16.5469 0.476562 16.8242 0.363281 17.3008 0.363281H17.9102C18.3867 0.363281 18.6641 0.476562 18.7422 0.703125L23.6758 14.4141C23.7148 14.5 23.7344 14.5898 23.7344 14.6836C23.7344 14.918 23.4414 15.0352 22.8555 15.0352H22.6797C22.1953 15.0352 21.9141 14.9258 21.8359 14.707L20.6172 11.2852H14.5L13.3047 14.707C13.2344 14.9258 12.957 15.0352 12.4727 15.0352H12.3672ZM20.0547 9.70312L17.875 3.50391C17.8125 3.33203 17.7617 3.13672 17.7227 2.91797C17.6836 2.69922 17.6484 2.48828 17.6172 2.28516H17.5703C17.4766 2.80859 17.3711 3.21484 17.2539 3.50391L15.0742 9.70312H20.0547ZM27.3516 15.0352C26.7891 15.0352 26.5078 14.8828 26.5078 14.5781V0.832031C26.5078 0.519531 26.7891 0.363281 27.3516 0.363281H27.5156C28.0703 0.363281 28.3477 0.519531 28.3477 0.832031V14.5781C28.3477 14.8828 28.0703 15.0352 27.5156 15.0352H27.3516ZM33.5938 15.0352C33.2969 15.0352 33.082 15 32.9492 14.9297C32.8164 14.8516 32.75 14.7344 32.75 14.5781V0.832031C32.75 0.519531 33.0312 0.363281 33.5938 0.363281H34.0273C34.2461 0.363281 34.418 0.394531 34.543 0.457031C34.6758 0.519531 34.793 0.621094 34.8945 0.761719L41.5508 10.8047L42.1719 11.9766V0.832031C42.1719 0.519531 42.4453 0.363281 42.9922 0.363281H43.1562C43.7031 0.363281 43.9766 0.519531 43.9766 0.832031V14.5781C43.9766 14.7344 43.9102 14.8516 43.7773 14.9297C43.6445 15 43.4375 15.0352 43.1562 15.0352H42.7344C42.5391 15.0352 42.3828 15.0117 42.2656 14.9648C42.1484 14.918 42.0586 14.8438 41.9961 14.7422L35.1289 4.38281L34.5664 3.30469V14.5781C34.5664 14.8828 34.2891 15.0352 33.7344 15.0352H33.5938ZM52.082 15.0352C51.5273 15.0352 51.25 14.8828 51.25 14.5781V7.52344L46.8906 1.10156C46.7812 0.953125 46.7266 0.828125 46.7266 0.726562C46.7266 0.484375 47.0469 0.363281 47.6875 0.363281H47.9102C48.1445 0.363281 48.332 0.386719 48.4727 0.433594C48.6211 0.480469 48.7344 0.5625 48.8125 0.679688L52.2344 5.80078L55.7266 0.667969C55.8516 0.464844 56.1641 0.363281 56.6641 0.363281H56.8047C57.0938 0.378906 57.3008 0.417969 57.4258 0.480469C57.5586 0.535156 57.625 0.617188 57.625 0.726562C57.625 0.796875 57.5664 0.921875 57.4492 1.10156L53.0898 7.58203V14.5781C53.0898 14.8828 52.8086 15.0352 52.2461 15.0352H52.082Z"
+                    fill="white" />
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-md-4 acive" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-4" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-4" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-4" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-4" href="#">Get In Touch</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero Header -->
+    <div class="container-xxl mx-auto main">
+      <div class="mx-auto d-flex flex-lg-row flex-column position-relative">
+        <!-- Left Column -->
+        <div
+                class="left-col flex-lg-grow-0 d-flex flex-column align-items-lg-start text-lg-start align-items-center text-center">
+          <h1 class="title-font text-white" style="font-family: 'Bebas Neue', cursive">
+            DEDICATED TO<br class="d-lg-block d-none" />
+            SOLVING PROBLEMS
+          </h1>
+          <p class="caption-font">
+            As Sprint is so fast, we want to solve<br class="d-sm-block d-none" />
+            your problem with us. Don't hesitate<br class="d-sm-block d-none" />
+            to contact us below
+          </p>
+          <div
+                  class="btn-div d-inline-block align-items-center d-lg-flex justify-content-center gap-lg-0 gap-sm-3 gap-0">
+            <button class="btn btn-get d-inline-flex text-white mb-4 mb-md-0">
+              GET IN TOUCH
+            </button>
+          </div>
+          <a href="#your-next-section's-id" class="d-flex align-items-center gap-2 text-decoration-none">
+            <p class="vertical-text scroll text-white">Scroll Down</p>
+            <svg class="mouse" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.6669 20.8333C11.6669 13.4695 17.6364 7.5 25.0002 7.5C32.364 7.5 38.3335 13.4695 38.3335 20.8333V33.3333C38.3335 40.6971 32.364 46.6667 25.0002 46.6667C17.6364 46.6667 11.6669 40.6971 11.6669 33.3333V20.8333ZM25.0002 9.16667C18.5569 9.16667 13.3335 14.39 13.3335 20.8333V33.3333C13.3335 39.7767 18.5569 45 25.0002 45C31.4435 45 36.6669 39.7767 36.6669 33.3333V20.8333C36.6669 14.39 31.4435 9.16667 25.0002 9.16667Z"
+                    fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.0002 23.75C24.54 23.75 24.1669 23.3769 24.1669 22.9167L24.1669 14.5833C24.1669 14.1231 24.54 13.75 25.0002 13.75C25.4604 13.75 25.8335 14.1231 25.8335 14.5833L25.8335 22.9167C25.8335 23.3769 25.4604 23.75 25.0002 23.75Z"
+                    fill="white" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-col text-center d-lg-flex flex-lg-column justify-content-lg-end d-block position-relative"
+             style="z-index: 10">
+          <div id="owl-header-8-1-2" class="owl-carousel owl-theme">
+            <div class="item item-margin">
+              <div class="frame">
+                <img
+                        src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header8/Header-8-1.png" />
+              </div>
+            </div>
+            <div class="item item-margin">
+              <div class="frame">
+                <img
+                        src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header8/Header-8-1.png" />
+              </div>
+            </div>
+          </div>
+          <div id="owl-header-8-1-1" class="owl-carousel owl-theme" style="height: 100%">
+            <div class="item">
+              <p class="carousel-number text-white text-lg-start mx-lg-0 mx-auto">
+                01
+                <span class="carousel-number-span position-absolute top-0">
+                                        /04</span>
+              </p>
+            </div>
+            <div class="item">
+              <p class="carousel-number text-white text-lg-start mx-lg-0 mx-auto">
+                02
+                <span class="carousel-number-span position-absolute top-0">
+                                        /04</span>
+              </p>
+            </div>
+          </div>
+          <div class="d-lg-block d-none position-absolute" style="z-index: 20; right: -10px">
+            <div class="right-line"></div>
+            <div class="vertical-text agency mx-auto">Agency Studio</div>
+            <button id="next-slide" class="btn" style="margin-bottom: 2rem">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.7803 11.2197C21.0732 11.5126 21.0732 11.9874 20.7803 12.2803L12.7803 20.2803C12.4874 20.5732 12.0126 20.5732 11.7197 20.2803C11.4268 19.9874 11.4268 19.5126 11.7197 19.2197L18.4393 12.5H3.75C3.33579 12.5 3 12.1642 3 11.75C3 11.3358 3.33579 11 3.75 11L18.4393 11L11.7197 4.28033C11.4268 3.98744 11.4268 3.51256 11.7197 3.21967C12.0126 2.92678 12.4874 2.92678 12.7803 3.21967L20.7803 11.2197Z"
+                      fill="white" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile UI -->
+          <div
+                  class="d-lg-none d-flex align-items-center justify-content-between mt-5 px-md-5 px-sm-3 px-1">
+            <div class="center-line"></div>
+            <div class="agency py-0">Agency Studio</div>
+            <button id="next-slide" class="btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.7803 11.2197C21.0732 11.5126 21.0732 11.9874 20.7803 12.2803L12.7803 20.2803C12.4874 20.5732 12.0126 20.5732 11.7197 20.2803C11.4268 19.9874 11.4268 19.5126 11.7197 19.2197L18.4393 12.5H3.75C3.33579 12.5 3 12.1642 3 11.75C3 11.3358 3.33579 11 3.75 11L18.4393 11L11.7197 4.28033C11.4268 3.98744 11.4268 3.51256 11.7197 3.21967C12.0126 2.92678 12.4874 2.92678 12.7803 3.21967L20.7803 11.2197Z"
+                      fill="white" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"
+          integrity="sha512-M+qMI1PHRcYcOpJzeJlaWbVVx2JJyPIwZas8or7dc97LZOokjvbpfRxymhVtlJLyjiF3wGyr0FJOA4DLONLVLw=="
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Owl Carousel -->
+  <script>
+    var header_8_1_car_1 = $("#owl-header-8-1-2"),
+            header_8_1_car_2 = $("#owl-header-8-1-1");
+    $(".header-8-1 #next-slide").click(function () {
+      header_8_1_car_1.trigger("next.owl.carousel");
+      header_8_1_car_2.trigger("next.owl.carousel");
+    });
+    //Carousel settings
+    header_8_1_car_2.owlCarousel({
+      loop: true,
+      nav: false,
+      dots: false,
+      touchDrag: false,
+      mouseDrag: false,
+      margin: 40,
+      items: 1,
+      responsiveClass: true,
+    });
+    header_8_1_car_1.owlCarousel({
+      loop: true,
+      dots: false,
+      margin: 12,
+      nav: false,
+      responsiveClass: true,
+      items: 1,
+    });
+  </script>
+
+  <!-- Sticky Navbar -->
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".header-8-1 .header-sticky");
+        $nav.toggleClass(
+                "header-8-1 scrolled",
+                $(this).scrollTop() > $nav.height()
+        );
+      });
+    });
+  </script>
+</section>

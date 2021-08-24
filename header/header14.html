@@ -1,0 +1,342 @@
+<section class="w-100" style="box-sizing: border-box; background-color: #f9fcff">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    .header-6-1 .navbar-light .navbar-nav .nav-link {
+      font: 500 0.875rem/1.25rem Poppins, sans-serif;
+      color: #131049;
+      transition: 0.3s;
+    }
+
+    .header-6-1 .navbar-light .navbar-nav .nav-link.active,
+    .header-6-1 .navbar-light .navbar-nav .nav-link:hover {
+      color: #2f3ad3;
+      transition: 0.3s;
+    }
+
+    .header-6-1 .btn-contact {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 0.75rem;
+      background-color: #efefef;
+      color: #696767;
+      transition: 0.3s;
+    }
+
+    .header-6-1 .btn-contact:hover {
+      background-color: #e1e3ff;
+      color: #2f3ad3;
+      transition: 0.3s;
+    }
+
+    .header-6-1 .btn-sign {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      padding: 0.75rem 2.75rem;
+      border: none;
+      border-radius: 0.75rem;
+      background-color: #3743e3;
+      color: #f8f7f3;
+      transition: 0.3s;
+    }
+
+    .header-6-1 .btn-sign:hover {
+      background-color: #2f3ad3;
+      transition: 0.3s;
+    }
+
+    .header-6-1 p {
+      margin: 0rem;
+    }
+
+    .header-6-1 .text-blue-1 {
+      color: #131049;
+    }
+
+    .header-6-1 .text-gray-1 {
+      color: #6c6995;
+    }
+
+    .header-6-1 #menu-toggle:checked+#menu,
+    .header-6-1 #menu-toggle:checked+#menu+#menu {
+      display: block;
+    }
+
+    .header-6-1 .btn-get {
+      font: 500 0.875rem/1.25rem Poppins, sans-serif;
+      padding: 1rem 2.5rem;
+      margin-bottom: 1rem;
+      border-radius: 0.75rem;
+      border: none;
+      background-color: #3743e3;
+      color: #f8f7f3;
+      transition: 0.3s;
+    }
+
+    .header-6-1 .btn-get:hover {
+      background-color: #2f3ad3;
+      transition: 0.3s;
+    }
+
+    .header-6-1 .card-header {
+      box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.04);
+    }
+
+    .header-6-1 .main {
+      padding: 1.75rem 2rem 4rem;
+    }
+
+    .header-6-1 .left-column {
+      margin-bottom: 0.75rem;
+      z-index: 40;
+    }
+
+    .header-6-1 .title-font {
+      font: 700 2.25rem/2.5rem Poppins, sans-serif;
+      padding-top: 3.5rem;
+    }
+
+    .header-6-1 .caption-font {
+      font: 500 0.875rem/2.5 Poppins, sans-serif;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .header-6-1 .user-pict {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    .header-6-1 .user-pict .left-margin {
+      margin-left: -1rem;
+    }
+
+    .header-6-1 .user-number {
+      font: 600 0.875rem/1.25rem Poppins, sans-serif;
+      color: #535079;
+    }
+
+    .header-6-1 .hero-img {
+      position: relative;
+      width: 100%;
+    }
+
+    .header-6-1 .card-top {
+      top: 7rem;
+    }
+
+    .header-6-1 .card-top .card-header {
+      border-radius: 1.5rem;
+      border: none;
+      margin-top: 2.5rem;
+      padding: 1rem 1.75rem 1.25rem;
+    }
+
+    .header-6-1 .card-bottom {
+      bottom: 3rem;
+      right: 3rem;
+    }
+
+    .header-6-1 .card-top .text-1 {
+      font-weight: 600;
+      padding-bottom: 0.125rem;
+    }
+
+    .header-6-1 .card-top .text-2 {
+      font-weight: 500;
+      padding-bottom: 1.75rem;
+    }
+
+    .header-6-1 .card-bottom .card-header {
+      border-radius: 0.75rem;
+      border: none;
+      margin-top: 2.5rem;
+      padding: 0.75rem 1.25rem 0.5rem;
+    }
+
+    .header-6-1 .card-bottom .text-1 {
+      font-weight: 600;
+      padding: 0.375rem 0rem 0.875rem;
+      color: #0f2455;
+    }
+
+    /* sm */
+    @media (min-width: 576px) {
+      .header-6-1 .title-font {
+        font: 700 3rem/1.25 Poppins, sans-serif;
+      }
+    }
+
+    /* md */
+    @media (min-width: 768px) {
+      .header-6-1 .main {
+        padding: 1.75rem 4rem 5rem;
+      }
+
+      .header-6-1 .left-column {
+        margin-bottom: 3rem;
+      }
+
+      .header-6-1 .btn-get {
+        margin-bottom: 0rem;
+      }
+
+      .header-6-1 .card-top .card-header {
+        margin-left: auto;
+      }
+
+      .header-6-1 .card-bottom .card-header {
+        margin-left: auto;
+        margin-top: 0;
+      }
+    }
+
+    /* lg */
+    @media (min-width: 992px) {
+      .header-6-1 .main {
+        padding: 1.75rem 7rem 5rem;
+      }
+
+      .header-6-1 .left-column {
+        margin-bottom: 0rem;
+      }
+
+      .header-6-1 .title-font {
+        font: 700 3.75rem/1.25 Poppins, sans-serif;
+      }
+
+      .header-6-1 .hero-img {
+        position: absolute;
+        right: 0;
+        width: auto;
+      }
+
+      .header-6-1 .card-top {
+        top: 0rem;
+      }
+
+      .header-6-1 .card-bottom {
+        bottom: 5rem;
+      }
+    }
+
+    /* xl */
+    @media (min-width: 1200px) {
+      .header-6-1 .main {
+        padding: 1.75rem 9rem 5rem;
+      }
+    }
+  </style>
+
+  <!-- Navbar -->
+  <div class="header-6-1 container-xxl mx-auto p-0 position-relative" style="font-family: 'Poppins', sans-serif">
+    <nav class="main navbar navbar-expand-lg navbar-light" style="padding-top: 2rem; padding-bottom: 2rem">
+      <div class="container-xxl p-0 d-flex gap-lg-5 gap-3">
+        <a class="navbar-brand" href="#">
+          <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-2.png"
+               alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2 mb-3">
+            <li class="nav-item">
+              <a class="nav-link px-md-3 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#">Course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#">Blog</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-lg-4 gap-2">
+            <button class="btn btn-contact" href="#">Contact Us</button>
+            <button class="btn btn-sign text-white" href="#">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero-header-4-1 -->
+    <div class="">
+      <div class="main mx-auto row position-relative">
+        <!-- Left Column -->
+        <div
+                class="left-column p-0 col-lg-6 d-flex flex-column align-items-lg-start justify-content-lg-center align-items-center text-lg-start text-center">
+          <h1 class="title-font text-blue-1">
+            Turn your<br class="d-md-block d-none" />
+            amdition into a<br class="d-md-block d-none" />success story
+          </h1>
+          <p class="caption-font text-gray-1">
+            Online learning is the future of education, and it is right<br class="d-md-block d-none" />
+            now all around us. eLearning, mobile learning, distance<br class="d-md-block d-none" />
+            education all of these technologies.
+          </p>
+          <button class="btn btn-get d-inline-flex text-white">
+            Get Started
+          </button>
+          <div class="user-pict d-flex align-items-center gap-2">
+            <div class="d-flex">
+              <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-6.png"
+                   alt="" />
+              <img class="left-margin"
+                   src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-7.png"
+                   alt="" />
+              <img class="left-margin"
+                   src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-9.png"
+                   alt="" />
+              <img class="left-margin"
+                   src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-8.png"
+                   alt="" />
+            </div>
+            <p class="user-number">
+              <span style="color: #fd8c54">45K+</span> Regular User
+            </p>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="col-lg-6 p-0 d-flex text-center justify-content-lg-start justify-content-center d-flex">
+          <img class="hero-img" id="hero-header-4-1"
+               src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-1.png"
+               alt="" />
+          <div class="card-top position-absolute position-relative d-md-flex d-none flex-wrap align-items-start justify-content-start"
+               style="width: 212px">
+            <div class="card-header d-flex flex-column w-100 bg-white">
+              <p class="text-1 text-start text-blue-1">Requirement</p>
+              <p class="text-2 text-start text-gray-1">Skills</p>
+              <img class=""
+                   src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-3.png"
+                   alt="" />
+            </div>
+          </div>
+          <div class="card-bottom position-absolute" style="z-index: 1">
+            <div class="d-flex flex-wrap align-items-start justify-content-start" style="width: 204px">
+              <div class="card-header d-md-flex d-none flex-column align-items-center w-100 bg-white">
+                <img class="" width="50" height="50"
+                     src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-4.png"
+                     alt="" />
+                <p class="text-1 text-center">2021</p>
+                <img style="object-fit: none"
+                     src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-5.png"
+                     alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

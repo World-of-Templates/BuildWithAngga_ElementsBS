@@ -1,0 +1,447 @@
+<section class="w-100 position-relative" style="box-sizing: border-box">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        .header-6-6 .navbar-light .navbar-nav .nav-link {
+            font: normal 0.75rem/1rem Poppins, sans-serif;
+            color: #130f48;
+            letter-spacing: 0.1em;
+            transition: 0.3s;
+        }
+
+        .header-6-6 .navbar-light .navbar-nav .nav-link.active,
+        .header-6-6 .navbar-light .navbar-nav .nav-link:hover {
+            font-weight: 600;
+            color: #121212;
+        }
+
+        .header-6-6 .btn-login {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            padding: 1rem 1.75rem;
+            letter-spacing: 0.1em;
+        }
+
+        .header-6-6 .btn-register {
+            font: 700 0.75rem/1rem Poppins, sans-serif;
+            padding: 1rem 2.25rem;
+            letter-spacing: 0.1em;
+            border-radius: 999px;
+            border: 1px solid #195aff;
+            color: #195aff;
+            transition: 0.3s;
+        }
+
+        .header-6-6 .btn-register:hover {
+            background-color: #195aff;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+
+        .header-6-6 .nav-main {
+            padding: 2.25rem 2rem 2.5rem;
+        }
+
+        .header-6-6 p {
+            margin: 0;
+        }
+
+        .header-6-6 .card-item {
+            border-radius: 1.5rem;
+            padding: 1.5rem 1.5rem 2rem;
+            margin-top: 2.5rem;
+            box-shadow: 20px 40px 80px 0px rgba(64, 73, 98, 0.2);
+            transition: 0.4s;
+            top: 0px;
+            left: 0px;
+            position: relative;
+        }
+
+        .header-6-6 .card-item:hover {
+            box-shadow: 20px 40px 80px 0px rgba(37, 43, 59, 0.2);
+            top: -3px;
+            left: -3px;
+            position: relative;
+            transition: 0.4s;
+        }
+
+        .header-6-6 .btn-get {
+            font: 500 1.125rem/1.75rem Poppins, sans-serif;
+            padding: 1.25rem 2rem;
+            margin-bottom: 1rem;
+            border-radius: 999px;
+            letter-spacing: 0.025em;
+            background-color: #195aff;
+            transition: 0.3s;
+        }
+
+        .header-6-6 .btn-get:hover {
+            background-color: #144ad1;
+            transition: 0.3s;
+        }
+
+        .header-6-6 .btn-watch {
+            font: 500 1.125rem/1.75rem Poppins, sans-serif;
+            padding: 1.25rem 2rem;
+            margin-bottom: 1rem;
+            border-radius: 999px;
+            letter-spacing: 0.025em;
+            background-color: #f4f3ff;
+            color: #343434;
+            transition: 0.3s;
+        }
+
+        .header-6-6 .btn-watch:hover {
+            background-color: #dad9de;
+            color: #343434;
+            transition: 0.3s;
+        }
+
+        .header-6-6 .title-font {
+            font: 600 2.25rem/1.25 Poppins, sans-serif;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .header-6-6 .caption-font {
+            font: normal 0.875rem/32px Poppins, sans-serif;
+            letter-spacing: 0.1px;
+            margin-bottom: 4rem;
+        }
+
+        .header-6-6 .text-gray-1 {
+            color: #40467e;
+        }
+
+        .header-6-6 .text-blue-1 {
+            color: #3d67fc;
+        }
+
+        .header-6-6 .text-blue-2 {
+            color: #060c45;
+        }
+
+        .header-6-6 .text-black-1 {
+            color: #141818;
+        }
+
+        .header-6-6 .text-green-1 {
+            color: #02bc4d;
+        }
+
+        .header-6-6 .main {
+            padding: 5rem 2rem;
+        }
+
+        .header-6-6 .left-column {
+            z-index: 10;
+            margin-bottom: 0.75rem;
+        }
+
+        .header-6-6 .caption-top {
+            font: 500 1.125rem/1.75rem Poppins, sans-serif;
+            letter-spacing: 0.025em;
+        }
+
+        .header-6-6 .hero-img {
+            bottom: 0;
+            right: 2rem;
+        }
+
+        .header-6-6 .card-block {
+            border-radius: 1.5rem;
+            padding: 1.5rem 1.5rem 2rem;
+            box-shadow: 20px 40px 80px 0px rgba(64, 73, 98, 0.2);
+            transition: 0.4s;
+            top: 0px;
+            left: 0px;
+            position: relative;
+        }
+
+        .header-6-6 .card-block:hover {
+            box-shadow: 20px 40px 80px 0px rgba(37, 43, 59, 0.2);
+            top: -3px;
+            left: -3px;
+            position: relative;
+            transition: 0.4s;
+        }
+
+        .header-6-6 .card-photo {
+            border: 2px solid #ffffff;
+            border-radius: 999px;
+            height: 3rem;
+            width: 3rem;
+            box-shadow: 0px 8px 20px 0px rgba(95, 95, 95, 0.25);
+        }
+
+        .header-6-6 .user-name {
+            font: 600 1rem/1.5rem "Poppins", sans-serif;
+            margin-bottom: 0.25rem;
+            color: #060c45;
+        }
+
+        .header-6-6 .user-job {
+            font: normal 0.75rem/1rem "Poppins", sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-6-6 .user-big-text {
+            font: 600 1.5rem/2rem "Poppins", sans-serif;
+            margin-bottom: 0.25rem;
+        }
+
+        .header-6-6 .user-price {
+            font: 600 1.5rem/2rem "Poppins", sans-serif;
+            color: #060c45;
+        }
+
+        .header-6-6 .btn-hire {
+            font: 500 1.125rem/1.75rem "Poppins", sans-serif;
+            padding: 0.625rem 1.5rem;
+            border-radius: 1rem;
+            background-color: #4b73ff;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+
+        .header-6-6 .btn-hire:hover {
+            background-color: #144ad1;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+
+        /* sm */
+        @media (min-width: 576px) {
+            .header-6-6 .title-font {
+                font: 600 3rem/1.25 Poppins, sans-serif;
+            }
+
+            .header-6-6 {
+                background-image: url("http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-22.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        /* md */
+        @media (min-width: 768px) {
+            .header-6-6 .main {
+                padding: 5rem 4rem;
+            }
+
+            .header-6-6 .left-column {
+                margin-bottom: 3rem;
+            }
+
+            .header-6-6 .btn-get,
+            .header-6-6 .btn-watch {
+                margin-bottom: 0rem;
+            }
+
+            .header-6-6 .hero-img {
+                right: 4rem;
+            }
+
+            .header-6-6 .card-item {
+                margin-top: 0rem;
+                margin-left: auto;
+            }
+        }
+
+        /* lg */
+        @media (min-width: 992px) {
+            .header-6-6 .main {
+                padding: 5rem 8rem 3rem;
+            }
+
+            .header-6-6 .left-column {
+                margin-bottom: 0rem;
+            }
+
+            .header-6-6 .title-font {
+                font: 600 3.75rem/1.25 Poppins, sans-serif;
+            }
+
+            .header-6-6 .btn-get,
+            .header-6-6 .btn-watch {
+                margin-bottom: 3rem;
+            }
+
+            .header-6-6 .hero-img {
+                right: 5rem;
+            }
+
+            .header-6-6 nav .active {
+                position: relative;
+                padding-bottom: 12px;
+                padding-top: 8px;
+            }
+
+            .header-6-6 nav .active:before {
+                content: "";
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
+                bottom: 0;
+                height: auto;
+                border-radius: 999px;
+                width: 5%;
+                border: 3px solid #3d67fc;
+            }
+
+            .header-6-6 .nav-main {
+                padding: 2.25rem 4rem 2.5rem;
+            }
+        }
+
+        /* xl */
+        @media (min-width: 1200px) {}
+    </style>
+    <!-- Navbar -->
+    <div class="header-6-6 container-xxl mx-auto p-0 position-relative" style="font-family: 'Poppins', sans-serif">
+        <nav class="nav-main navbar navbar-expand-lg navbar-light" style="font-family: Poppins, sans-serif">
+            <div class="container-xxl p-0 gap-3">
+                <a class="navbar-brand" href="#">
+                    <svg width="120" height="30" viewBox="0 0 120 30" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M10.3218 18.694L8.00947 21.0063C7.24412 21.7624 6.21064 22.1851 5.13473 22.1819C4.05882 22.1787 3.02789 21.7498 2.26709 20.9891C1.5063 20.2283 1.07745 19.1973 1.07421 18.1214C1.07096 17.0455 1.49358 16.012 2.24976 15.2466L5.70349 11.7929C5.7017 11.7321 5.70047 11.6711 5.70047 11.61C5.70014 11.0956 5.76616 10.5834 5.89693 10.0859L1.49342 14.4894C0.534593 15.4551 -0.00242193 16.7615 8.21199e-06 18.1223C0.00243836 19.4832 0.544115 20.7876 1.50638 21.7498C2.46865 22.7121 3.77307 23.2537 5.13392 23.2561C6.49476 23.2586 7.80109 22.7215 8.76676 21.7627L11.079 19.4505L10.3218 18.694Z"
+                                fill="#3A71FF" />
+                        <path
+                                d="M18.1626 23.2673C17.4872 23.2684 16.8183 23.1361 16.1942 22.8779C15.5702 22.6199 15.0032 22.2409 14.526 21.7631L8.00955 15.2466C7.04728 14.2817 6.50734 12.9742 6.5083 11.6115C6.50927 10.2487 7.05106 8.94203 8.0147 7.97843C8.97834 7.01483 10.285 6.47308 11.6478 6.47217C13.0106 6.47126 14.318 7.01125 15.2829 7.97356L21.7993 14.49C22.5189 15.2089 23.0091 16.1252 23.2077 17.1229C23.4064 18.1204 23.3046 19.1546 22.9152 20.0944C22.5258 21.0341 21.8664 21.8372 21.0204 22.4021C20.1744 22.9669 19.1799 23.2679 18.1627 23.2673H18.1626ZM15.2829 21.0064C16.0486 21.7611 17.0815 22.1824 18.1566 22.1785C19.2316 22.1746 20.2615 21.7458 21.0217 20.9856C21.7818 20.2254 22.2107 19.1955 22.2145 18.1205C22.2184 17.0455 21.7972 16.0124 21.0425 15.2468L14.5261 8.73038C14.1488 8.34768 13.6997 8.0434 13.2044 7.83508C12.7091 7.62675 12.1775 7.5185 11.6402 7.51655C11.1028 7.51459 10.5704 7.61899 10.0736 7.82372C9.57686 8.02844 9.12544 8.32946 8.74549 8.70941C8.36554 9.08936 8.06453 9.54073 7.8598 10.0375C7.65508 10.5343 7.55068 11.0667 7.55263 11.6041C7.55458 12.1414 7.66283 12.673 7.87116 13.1683C8.07948 13.6636 8.38376 14.1128 8.76646 14.49L15.2829 21.0064Z"
+                                fill="#3A71FF" />
+                        <path
+                                d="M21.0422 7.97362L18.73 10.2858L19.4868 11.0427L21.799 8.73044C22.5647 7.97581 23.5977 7.5545 24.6727 7.5584C25.7477 7.5623 26.7776 7.99109 27.5378 8.75127C28.298 9.51144 28.7268 10.5413 28.7307 11.6164C28.7345 12.6914 28.3133 13.7244 27.5586 14.4901L24.1023 17.9464C24.1197 18.5227 24.0538 19.0984 23.9066 19.6558L28.3155 15.2469C29.28 14.2824 29.8218 12.9742 29.8218 11.6102C29.8218 10.2462 29.28 8.93812 28.3155 7.97362C27.3509 7.00913 26.0428 6.46729 24.6788 6.46729C23.3148 6.46729 22.0067 7.00913 21.0422 7.97362Z"
+                                fill="#3A71FF" />
+                        <path
+                                d="M49.992 22H47.256L42.68 15.056V22H39.944V10.688H42.68L47.256 17.696V10.688H49.992V22ZM60.8615 17.296C60.8615 17.52 60.8348 17.7653 60.7815 18.032H54.5895C54.6215 18.704 54.7922 19.1893 55.1015 19.488C55.4108 19.776 55.8055 19.92 56.2855 19.92C56.6908 19.92 57.0268 19.8187 57.2935 19.616C57.5602 19.4133 57.7362 19.152 57.8215 18.832H60.7175C60.6002 19.4613 60.3442 20.0267 59.9495 20.528C59.5548 21.0187 59.0535 21.408 58.4455 21.696C57.8375 21.9733 57.1602 22.112 56.4135 22.112C55.5388 22.112 54.7602 21.9307 54.0775 21.568C53.4055 21.1947 52.8775 20.6613 52.4935 19.968C52.1095 19.2747 51.9175 18.464 51.9175 17.536C51.9175 16.5973 52.1042 15.7867 52.4775 15.104C52.8615 14.4107 53.3948 13.8827 54.0775 13.52C54.7602 13.1467 55.5388 12.96 56.4135 12.96C57.2988 12.96 58.0775 13.1413 58.7495 13.504C59.4215 13.8667 59.9388 14.3787 60.3015 15.04C60.6748 15.6907 60.8615 16.4427 60.8615 17.296ZM58.0935 16.88C58.1042 16.2933 57.9442 15.856 57.6135 15.568C57.2935 15.2693 56.8935 15.12 56.4135 15.12C55.9122 15.12 55.4962 15.2693 55.1655 15.568C54.8348 15.8667 54.6482 16.304 54.6055 16.88H58.0935ZM66.9638 12.96C67.8491 12.96 68.6384 13.1467 69.3318 13.52C70.0358 13.8827 70.5851 14.4107 70.9798 15.104C71.3851 15.7973 71.5878 16.608 71.5878 17.536C71.5878 18.464 71.3851 19.2747 70.9798 19.968C70.5851 20.6613 70.0358 21.1947 69.3318 21.568C68.6384 21.9307 67.8491 22.112 66.9638 22.112C66.0784 22.112 65.2838 21.9307 64.5798 21.568C63.8758 21.1947 63.3211 20.6613 62.9158 19.968C62.5211 19.2747 62.3238 18.464 62.3238 17.536C62.3238 16.608 62.5211 15.7973 62.9158 15.104C63.3211 14.4107 63.8758 13.8827 64.5798 13.52C65.2838 13.1467 66.0784 12.96 66.9638 12.96ZM66.9638 15.328C66.4411 15.328 65.9984 15.52 65.6358 15.904C65.2838 16.2773 65.1078 16.8213 65.1078 17.536C65.1078 18.2507 65.2838 18.7947 65.6358 19.168C65.9984 19.5413 66.4411 19.728 66.9638 19.728C67.4864 19.728 67.9238 19.5413 68.2758 19.168C68.6278 18.7947 68.8038 18.2507 68.8038 17.536C68.8038 16.8213 68.6278 16.2773 68.2758 15.904C67.9238 15.52 67.4864 15.328 66.9638 15.328ZM78.6745 10.576C80.1145 10.576 81.3038 10.9547 82.2425 11.712C83.1918 12.4693 83.8052 13.4933 84.0825 14.784H81.1865C80.9732 14.2613 80.6425 13.8507 80.1945 13.552C79.7572 13.2533 79.2345 13.104 78.6265 13.104C77.8265 13.104 77.1812 13.3973 76.6905 13.984C76.1998 14.5707 75.9545 15.3547 75.9545 16.336C75.9545 17.3173 76.1998 18.1013 76.6905 18.688C77.1812 19.264 77.8265 19.552 78.6265 19.552C79.2345 19.552 79.7572 19.4027 80.1945 19.104C80.6425 18.8053 80.9732 18.4 81.1865 17.888H84.0825C83.8052 19.168 83.1918 20.192 82.2425 20.96C81.3038 21.7173 80.1145 22.096 78.6745 22.096C77.5758 22.096 76.6105 21.856 75.7785 21.376C74.9465 20.8853 74.3012 20.2027 73.8425 19.328C73.3945 18.4533 73.1705 17.456 73.1705 16.336C73.1705 15.216 73.3945 14.2187 73.8425 13.344C74.3012 12.4693 74.9465 11.792 75.7785 11.312C76.6105 10.8213 77.5758 10.576 78.6745 10.576ZM88.8519 10.16V22H86.1159V10.16H88.8519ZM94.6329 12.96C95.3155 12.96 95.9022 13.1147 96.3929 13.424C96.8835 13.7333 97.2462 14.1547 97.4809 14.688V13.072H100.201V22H97.4809V20.384C97.2462 20.9173 96.8835 21.3387 96.3929 21.648C95.9022 21.9573 95.3155 22.112 94.6329 22.112C93.8969 22.112 93.2355 21.9307 92.6489 21.568C92.0729 21.1947 91.6142 20.6613 91.2729 19.968C90.9422 19.2747 90.7769 18.464 90.7769 17.536C90.7769 16.5973 90.9422 15.7867 91.2729 15.104C91.6142 14.4107 92.0729 13.8827 92.6489 13.52C93.2355 13.1467 93.8969 12.96 94.6329 12.96ZM95.5129 15.36C94.9262 15.36 94.4515 15.552 94.0889 15.936C93.7369 16.32 93.5609 16.8533 93.5609 17.536C93.5609 18.2187 93.7369 18.752 94.0889 19.136C94.4515 19.52 94.9262 19.712 95.5129 19.712C96.0889 19.712 96.5582 19.5147 96.9209 19.12C97.2942 18.7253 97.4809 18.1973 97.4809 17.536C97.4809 16.864 97.2942 16.336 96.9209 15.952C96.5582 15.5573 96.0889 15.36 95.5129 15.36ZM105.833 12.96C106.963 12.96 107.865 13.2427 108.537 13.808C109.219 14.3733 109.646 15.12 109.817 16.048H107.257C107.182 15.6853 107.011 15.4027 106.745 15.2C106.489 14.9867 106.163 14.88 105.769 14.88C105.459 14.88 105.225 14.9493 105.065 15.088C104.905 15.216 104.825 15.4027 104.825 15.648C104.825 15.9253 104.969 16.1333 105.257 16.272C105.555 16.4107 106.019 16.5493 106.649 16.688C107.331 16.848 107.891 17.0133 108.329 17.184C108.766 17.344 109.145 17.6107 109.465 17.984C109.785 18.3573 109.945 18.8587 109.945 19.488C109.945 20 109.806 20.4533 109.529 20.848C109.251 21.2427 108.851 21.552 108.329 21.776C107.806 22 107.187 22.112 106.473 22.112C105.267 22.112 104.302 21.8453 103.577 21.312C102.851 20.7787 102.409 20.016 102.249 19.024H104.889C104.931 19.408 105.091 19.7013 105.369 19.904C105.657 20.1067 106.025 20.208 106.473 20.208C106.782 20.208 107.017 20.1387 107.177 20C107.337 19.8507 107.417 19.6587 107.417 19.424C107.417 19.1147 107.267 18.896 106.969 18.768C106.681 18.6293 106.206 18.4853 105.545 18.336C104.883 18.1973 104.339 18.048 103.913 17.888C103.486 17.728 103.118 17.472 102.809 17.12C102.499 16.7573 102.345 16.2667 102.345 15.648C102.345 14.848 102.649 14.2027 103.257 13.712C103.865 13.2107 104.723 12.96 105.833 12.96ZM115.208 12.96C116.338 12.96 117.24 13.2427 117.912 13.808C118.594 14.3733 119.021 15.12 119.192 16.048H116.632C116.557 15.6853 116.386 15.4027 116.12 15.2C115.864 14.9867 115.538 14.88 115.144 14.88C114.834 14.88 114.6 14.9493 114.44 15.088C114.28 15.216 114.2 15.4027 114.2 15.648C114.2 15.9253 114.344 16.1333 114.632 16.272C114.93 16.4107 115.394 16.5493 116.024 16.688C116.706 16.848 117.266 17.0133 117.704 17.184C118.141 17.344 118.52 17.6107 118.84 17.984C119.16 18.3573 119.32 18.8587 119.32 19.488C119.32 20 119.181 20.4533 118.904 20.848C118.626 21.2427 118.226 21.552 117.704 21.776C117.181 22 116.562 22.112 115.848 22.112C114.642 22.112 113.677 21.8453 112.952 21.312C112.226 20.7787 111.784 20.016 111.624 19.024H114.264C114.306 19.408 114.466 19.7013 114.744 19.904C115.032 20.1067 115.4 20.208 115.848 20.208C116.157 20.208 116.392 20.1387 116.552 20C116.712 19.8507 116.792 19.6587 116.792 19.424C116.792 19.1147 116.642 18.896 116.344 18.768C116.056 18.6293 115.581 18.4853 114.92 18.336C114.258 18.1973 113.714 18.048 113.288 17.888C112.861 17.728 112.493 17.472 112.184 17.12C111.874 16.7573 111.72 16.2667 111.72 15.648C111.72 14.848 112.024 14.2027 112.632 13.712C113.24 13.2107 114.098 12.96 115.208 12.96Z"
+                                fill="#3A71FF" />
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mx-auto mb-3 mb-lg-0 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link px-md-4 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-md-4" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-md-4" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-md-4" href="#">Team</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a class="btn btn-login" href="">Login</a>
+                        <a class="btn btn-register" href="#">Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero-header -->
+        <div>
+            <div class="main mx-auto row d-flex flex-lg-row flex-column">
+                <!-- Left Column -->
+                <div
+                        class="left-column col-lg-7 flex-lg-grow-0 d-flex flex-column align-items-lg-start text-lg-start align-items-center text-center">
+                    <div class="d-flex gap-2">
+                        <p class="caption-top text-blue-1">Online Courses</p>
+                    </div>
+                    <h1 class="title-font text-blue-2">
+                        Improve Your<br class="d-xxl-block d-none" />
+                        Speaking Skills With A<br class="d-xxl-block d-none" />
+                        Professional Teacher
+                    </h1>
+                    <p class="caption-font text-gray-1">
+                        The lessons are designed to help you become an expert in<br class="d-xl-block d-none" />
+                        communication. Join now and get started!
+                    </p>
+                    <div class="d-flex flex-sm-row flex-column gap-sm-4 align-items-center">
+                        <button class="btn btn-get text-white border-0">
+                            Get Started
+                        </button>
+                        <button class="btn btn-watch d-inline-flex align-items-center">
+                            <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                        d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM10.622 8.415L15.501 11.667C15.5559 11.7035 15.6009 11.753 15.632 11.8111C15.6631 11.8692 15.6794 11.9341 15.6794 12C15.6794 12.0659 15.6631 12.1308 15.632 12.1889C15.6009 12.247 15.5559 12.2965 15.501 12.333L10.621 15.585C10.5608 15.6249 10.491 15.6477 10.4189 15.6512C10.3468 15.6546 10.2751 15.6384 10.2114 15.6043C10.1477 15.5703 10.0945 15.5197 10.0573 15.4578C10.02 15.396 10.0003 15.3252 10 15.253V8.747C10.0001 8.67465 10.0199 8.60369 10.0572 8.54168C10.0944 8.47967 10.1478 8.42893 10.2116 8.39486C10.2755 8.36079 10.3473 8.34467 10.4196 8.34822C10.4919 8.35177 10.5618 8.37485 10.622 8.415Z"
+                                        fill="#343434" />
+                            </svg>
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+                <!-- Right Column -->
+                <div
+                        class="right-column col-lg-5 text-center justify-content-lg-start justify-content-center d-flex pe-0">
+                    <img class="hero-img position-absolute d-lg-block d-none"
+                         src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-24.png"
+                         alt="" />
+                    <div class="d-flex align-items-end" style="z-index: 1">
+                        <div class="container p-0 mx-auto d-flex flex-wrap align-items-center">
+                            <div class="card-block d-flex flex-column ms-md-auto w-100 mt-5 mt-md-0 gap-3 bg-white">
+                                <div class="d-flex align-items-center justify-content-between gap-5">
+                                    <div>
+                                        <img class="card-photo"
+                                             src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header6/Header-6-21.png"
+                                             alt="" />
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="m-0" style="font-weight: 500; color: #ff1850">
+                                            100% Online
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-start">
+                                    <p class="user-name text-black-1">Dianne Russell</p>
+                                    <p class="user-job" style="color: #686868">Instructor</p>
+                                    <hr class="m-0" style="
+													border-color: #ededed;
+													opacity: 1;
+													background-color: #eded;
+												" />
+                                </div>
+                                <div class="d-flex row text-start">
+                                    <div class="col-6">
+                                        <p class="user-big-text" style="color: #31c363">
+                                            16,852
+                                        </p>
+                                        <p class="user-job">Leaners</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="user-big-text" style="color: #ffa800">
+                                            4.92<span class="user-job" style="font-weight: 500">/5</span>
+                                        </p>
+                                        <p class="user-job">Ratings</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 text-black-1">
+                                    <p class="user-price d-flex align-items-center text-start">
+                                        $15/h
+                                    </p>
+                                    <button
+                                            class="btn btn-hire font-medium text-white text-lg py-2.5 px-6 rounded-2xl"
+                                            style="letter-spacing: 0.5%">
+                                        Hire Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
